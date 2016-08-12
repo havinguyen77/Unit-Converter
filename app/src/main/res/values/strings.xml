@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string-array name= "unitOptions">
+        <item>Inch</item>
+        <item>Feet</item>
+        <item>Yard</item>
+        <item>Mile</item>
+        <item>Millimeter</item>
+        <item>Centimeter</item>
+        <item>Meter</item>
+        <item>Kilometer</item>
+    </string-array>
+
+    <string-array name="weightOptions">
+        <item>Ounce</item>
+        <item>Pound</item>
+        <item>Ton</item>
+        <item>Milligram</item>
+        <item>Gram</item>
+        <item>Kilogram</item>
+    </string-array>
+
+    <string-array name="tempOptions">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+        <item>Rankine</item>
+    </string-array>
+
+    <string-array name="dataOptions">
+        <item>Bit</item>
+        <item>Byte</item>
+        <item>Kilobyte</item>
+        <item>Megabyte</item>
+        <item>Gigabyte</item>
+        <item>Terabyte</item>
+    </string-array>
+
+    <string-array name="areaOptions">
+        <item>Square Inch</item>
+        <item>Square Feet</item>
+        <item>Square Yard</item>
+        <item>Square Mile</item>
+        <item>Acre</item>
+        <item>Square Centimeter</item>
+        <item>Square Meter</item>
+        <item>Square Kilometer</item>
+    </string-array>
+
+    <string-array name="volumeOptions">
+        <item>Teaspoon</item>
+        <item>Tablespoon</item>
+        <item>Fluid Ounce</item>
+        <item>Cup</item>
+        <item>Pint</item>
+        <item>Quart</item>
+        <item>Gallon</item>
+        <item>Bushel</item>
+        <item>Cubic Inch</item>
+        <item>Cubic Foot</item>
+        <item>Cubic Yard</item>
+        <item>Cubic Meter</item>
+        <item>Milliliter</item>
+        <item>Liter</item>
+    </string-array>
+
+
+
+
+
+</resources>
