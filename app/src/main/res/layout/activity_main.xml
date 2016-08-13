@@ -84,6 +84,7 @@
         android:layout_alignStart="@+id/textViewTitle"
         android:layout_toLeftOf="@+id/spinner1"
         android:layout_toStartOf="@+id/spinner1"
-        android:layout_above="@+id/textViewDisplayTo" />
+        android:layout_above="@+id/textViewDisplayTo"
+        android:text="1" />
 
 </RelativeLayout>

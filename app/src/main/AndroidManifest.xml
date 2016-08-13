@@ -2,20 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.havi.explo.unitconverter">
 
-    <application>
-        android:debuggable="true"
-        android:allowBackup="true"
+    <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
+        <!--The problem you had was in this file, you misplaced one of these ">"  -->
+
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--TODO: Declare your first page activity here and make it the first activity that shows up when the app starts. -->
+
+        <!--TODO: Make sure when you declare FirstPageActivity that it has the correct parent so you can use the back button-->
+
+
+
+
+
     </application>
 
 </manifest>

@@ -1,6 +1,6 @@
 package com.havi.explo.unitconverter;
 
-import android.content.Intent;
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         convert = (Button)findViewById(R.id.buttonConvert);
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         convert.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 String option1 = (String) spinnerFirst.getSelectedItem();
@@ -314,14 +316,6 @@ public class MainActivity extends AppCompatActivity {
                     cal = input * 10000;
                     answer.setText("" + cal + " m");
                 }
-
-
-
-
-
-
-
-
 
 
 

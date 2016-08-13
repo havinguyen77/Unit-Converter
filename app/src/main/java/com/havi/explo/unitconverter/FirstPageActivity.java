@@ -6,9 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
-/**
- * Created by HaviNguyen on 8/10/16.
- */
+
 public class FirstPageActivity extends AppCompatActivity {
 
     ImageButton length;
@@ -16,6 +14,9 @@ public class FirstPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstpage);
+
+        //Good start with this code! However make sure you declare the first activity in the Manifest.xml
+
 
         length = (ImageButton)findViewById(R.id.imageButtonLength);
         length.setOnClickListener(new View.OnClickListener() {
