@@ -7,13 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.havi.explo.unitconverter.MainActivity">
+    tools:context="com.havi.explo.unitconverter.WeightActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Length Converter"
+        android:text="Weight Converter"
         android:id="@+id/textViewTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -29,7 +29,9 @@
         android:layout_below="@+id/textViewTitle"
         android:layout_alignRight="@+id/textViewTitle"
         android:layout_alignEnd="@+id/textViewTitle"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:layout_toRightOf="@+id/textViewDisplayTo"
+        android:layout_toEndOf="@+id/textViewDisplayTo" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textViewAnswer"
+        android:id="@+id/textViewAnswerWeight"
         android:layout_below="@+id/buttonConvert"
         android:layout_marginTop="31dp"
         android:layout_alignLeft="@+id/spinner2"
@@ -80,13 +82,15 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextInput"
+        android:id="@+id/editTextInputWeight"
         android:layout_alignLeft="@+id/textViewTitle"
         android:layout_alignStart="@+id/textViewTitle"
-        android:layout_toLeftOf="@+id/spinner1"
         android:layout_toStartOf="@+id/spinner1"
         android:layout_above="@+id/textViewDisplayTo"
         android:text="0"
+        android:layout_alignRight="@+id/textViewDisplayTo"
+        android:layout_alignEnd="@+id/textViewDisplayTo"
         android:inputType="numberDecimal"/>
+
 
 </RelativeLayout>

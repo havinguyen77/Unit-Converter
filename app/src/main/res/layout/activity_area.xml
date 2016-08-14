@@ -7,13 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.havi.explo.unitconverter.MainActivity">
+    tools:context="com.havi.explo.unitconverter.AreaActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Length Converter"
+        android:text="Area Converter"
         android:id="@+id/textViewTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -88,5 +88,6 @@
         android:layout_above="@+id/textViewDisplayTo"
         android:text="0"
         android:inputType="numberDecimal"/>
+
 
 </RelativeLayout>

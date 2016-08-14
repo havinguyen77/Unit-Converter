@@ -1,6 +1,7 @@
 package com.havi.explo.unitconverter;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,6 +11,11 @@ import android.widget.ImageButton;
 public class FirstPageActivity extends AppCompatActivity {
 
     ImageButton length;
+    ImageButton weight;
+    ImageButton temp;
+    ImageButton data;
+    ImageButton area;
+    ImageButton volume;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +29,51 @@ public class FirstPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent goToDisplay = new Intent(FirstPageActivity.this,MainActivity.class);
+                startActivity(goToDisplay);
+            }
+        });
+
+        weight = (ImageButton)findViewById(R.id.imageButtonWeight);
+        weight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToDisplay = new Intent(FirstPageActivity.this, WeightActivity.class);
+                startActivity(goToDisplay);
+            }
+        });
+
+        temp = (ImageButton)findViewById(R.id.imageButtonTemp);
+        temp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToDisplay = new Intent(FirstPageActivity.this, TempActivity.class);
+                startActivity(goToDisplay);
+            }
+        });
+
+        data = (ImageButton)findViewById(R.id.imageButtonData);
+        data.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToDisplay = new Intent(FirstPageActivity.this, DataActivity.class);
+                startActivity(goToDisplay);
+            }
+        });
+
+        area = (ImageButton)findViewById(R.id.imageButtonArea);
+        area.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToDisplay = new Intent(FirstPageActivity.this, AreaActivity.class);
+                startActivity(goToDisplay);
+            }
+        });
+
+        volume = (ImageButton)findViewById(R.id.imageButtonVolume);
+        volume.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToDisplay = new Intent(FirstPageActivity.this, VolumeActivity.class);
                 startActivity(goToDisplay);
             }
         });

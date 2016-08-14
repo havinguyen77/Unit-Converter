@@ -6,26 +6,36 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        >
-        <!--The problem you had was in this file, you misplaced one of these ">"  -->
+        android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <!-- The problem you had was in this file, you misplaced one of these ">" -->
+
+        <activity android:name=".FirstPageActivity">
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity">
+            android:parentActivityName=".FirstPageActivity">
+        </activity>
 
-        <!--TODO: Declare your first page activity here and make it the first activity that shows up when the app starts. -->
-
-        <!--TODO: Make sure when you declare FirstPageActivity that it has the correct parent so you can use the back button-->
-
-
-
+        <!-- I declared the activity and adjusted the order of the appearance. Hopefully, I did it right because I can't run it rn -->
 
 
+        <!-- TODO: Declare your first page activity here and make it the first activity that shows up when the app starts. -->
+
+
+        <!-- TODO: Make sure when you declare FirstPageActivity that it has the correct parent so you can use the back button -->
+
+        <activity android:name=".VolumeActivity" />
+        <activity android:name=".WeightActivity" />
+        <activity android:name=".TempActivity" />
+        <activity android:name=".DataActivity" />
+        <activity android:name=".AreaActivity">
+
+        </activity>
     </application>
 
 </manifest>
