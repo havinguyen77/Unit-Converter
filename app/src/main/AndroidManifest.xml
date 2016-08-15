@@ -17,25 +17,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+
+        <actvity
+            android:name=".MainActivity"
+            android:parentActivityName=".FirstPageActivity">
+        </actvity>
+
+
+        <activity
+            android:name=".VolumeActivity"
             android:parentActivityName=".FirstPageActivity">
         </activity>
 
-        <!-- I declared the activity and adjusted the order of the appearance. Hopefully, I did it right because I can't run it rn -->
-
-
-        <!-- TODO: Declare your first page activity here and make it the first activity that shows up when the app starts. -->
-
-
-        <!-- TODO: Make sure when you declare FirstPageActivity that it has the correct parent so you can use the back button -->
-
-        <activity android:name=".VolumeActivity" />
-        <activity android:name=".WeightActivity" />
-        <activity android:name=".TempActivity" />
-        <activity android:name=".DataActivity" />
-        <activity android:name=".AreaActivity">
-
+        <activity android:name=".WeightActivity"
+            android:parentActivityName=".FirstPageActivity">
         </activity>
+
+        <activity android:name=".TempActivity"
+            android:parentActivityName=".FirstPageActivity">
+        </activity>
+
+        <activity android:name=".DataActivity"
+            android:parentActivityName=".FirstPageActivity">
+        </activity>
+
+        <activity android:name=".AreaActivity"
+            android:parentActivityName=".FirstPageActivity">
+        </activity>
+
+
     </application>
 
 </manifest>
