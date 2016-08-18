@@ -8,7 +8,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- The problem you had was in this file, you misplaced one of these ">" -->
 
         <activity android:name=".FirstPageActivity">
             <intent-filter>
@@ -18,14 +17,13 @@
             </intent-filter>
         </activity>
 
-        <actvity
-            android:name=".MainActivity"
-            android:parentActivityName=".FirstPageActivity">
-        </actvity>
-
 
         <activity
             android:name=".VolumeActivity"
+            android:parentActivityName=".FirstPageActivity">
+        </activity>
+
+        <activity android:name=".MainActivity"
             android:parentActivityName=".FirstPageActivity">
         </activity>
 
