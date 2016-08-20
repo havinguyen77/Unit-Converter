@@ -79,129 +79,143 @@ public class DataActivity extends AppCompatActivity {
                 }
                 if(option1Dt.equals("Bit") && option2Dt.equals("Kilobyte")){
                     calDt = inputDt*.0001220703125;
-                    answerDt.setText("" + calDt + " Kb");
+                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    answerDt.setText("" + cal + " Kb");
                 }
                 if(option1Dt.equals("Bit") && option2Dt.equals("Megabyte")){
                     calDt = inputDt*1.1920928e-7;
-                    answerDt.setText("" + calDt + " Mb");
+                    double cal = Math.round(calDt*1000000000.0)/1000000000.0;
+                    answerDt.setText("" + cal + " Mb");
                 }
                 if(option1Dt.equals("Bit") && option2Dt.equals("Gigabyte")){
                     calDt = inputDt*1.16415321e-10;
-                    answerDt.setText("" + calDt + " Gb");
+                    double cal = Math.round(calDt*1000000000000.0)/1000000000000.0;
+                    answerDt.setText("" + cal + " Gb");
                 }
                 if(option1Dt.equals("Bit") && option2Dt.equals("Terabyte")){
                     calDt = inputDt*1.1368683e-13;
-                    answerDt.setText("" + calDt + " Tb");
+                    double cal = Math.round(calDt*1000000000000000.0)/1000000000000000.0;
+                    answerDt.setText("" + cal + " Tb");
                 }
 
                 //Byte Conversions
                 if(option1Dt.equals("Byte") && option2Dt.equals("Bit")){
                     calDt = inputDt*8;
-                    answerDt.setText("" + calDt + " bit");
+                    answerDt.setText("" + Math.round(calDt) + " bit");
                 }
                 if(option1Dt.equals("Byte") && option2Dt.equals("Kilobyte")){
                     calDt = inputDt*.000976562;
-                    answerDt.setText("" + calDt + " Kb");
+                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    answerDt.setText("" + cal + " Kb");
                 }
                 if(option1Dt.equals("Byte") && option2Dt.equals("Megabyte")){
                     calDt = inputDt*9.5367431e-7;
-                    answerDt.setText("" + calDt + " Mb");
+                    double cal = Math.round(calDt*1000000000000.0)/1000000000000.0;
+                    answerDt.setText("" + cal + " Mb");
                 }
                 if(option1Dt.equals("Byte") && option2Dt.equals("Gigabyte")){
                     calDt = inputDt*9.3132257e-10;
-                    answerDt.setText("" + calDt + " Gb");
+                    double cal = Math.round(calDt*1000000000000000.0)/1000000000000000.0;
+                    answerDt.setText("" + cal + " Gb");
                 }
                 if(option1Dt.equals("Byte") && option2Dt.equals("Terabyte")){
                     calDt = inputDt*9.09494701e-13;
-                    answerDt.setText("" + calDt + " Tb");
+                    double cal = Math.round(calDt*1000000000000000.0)/1000000000000000.0;
+                    answerDt.setText("" + cal + " Tb");
                 }
 
                 //Kilobyte
                 if(option1Dt.equals("Kilobyte") && option2Dt.equals("Bit")){
                     calDt = inputDt*8192;
-                    answerDt.setText("" + calDt + " bit");
+                    answerDt.setText("" + Math.round(calDt) + " bit");
                 }
                 if(option1Dt.equals("Kilobyte") && option2Dt.equals("Byte")){
                     calDt = inputDt*1024;
-                    answerDt.setText("" + calDt + " b");
+                    answerDt.setText("" + Math.round(calDt) + " b");
                 }
                 if(option1Dt.equals("Kilobyte") && option2Dt.equals("Megabyte")){
                     calDt = inputDt*.0009765625;
-                    answerDt.setText("" + calDt + " Mb");
+                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    answerDt.setText("" + cal + " Mb");
                 }
                 if(option1Dt.equals("Kilobyte") && option2Dt.equals("Gigabyte")){
                     calDt = inputDt*9.53674316e-7;
-                    answerDt.setText("" + calDt + " Gb");
+                    double cal = Math.round(calDt*1000000000.0)/1000000000.0;
+                    answerDt.setText("" + cal + " Gb");
                 }
                 if(option1Dt.equals("Kilobyte") && option2Dt.equals("Terabyte")){
                     calDt = inputDt*9.3132257e-10;
-                    answerDt.setText("" + calDt + " Tb");
+                    double cal = Math.round(calDt*1000000000000000.0)/1000000000000000.0;
+                    answerDt.setText("" + cal + " Tb");
                 }
 
                 //Megabyte Conversions
                 if(option1Dt.equals("Megabyte") && option2Dt.equals("Bit")){
                     calDt = inputDt*8388608;
-                    answerDt.setText("" + calDt + " bit");
+                    answerDt.setText("" + Math.round(calDt) + " bit");
                 }
                 if(option1Dt.equals("Megabyte") && option2Dt.equals("Byte")){
                     calDt = inputDt*1048576;
-                    answerDt.setText("" + calDt + " b");
+                    answerDt.setText("" + Math.round(calDt) + " b");
                 }
                 if(option1Dt.equals("Megabyte") && option2Dt.equals("Kilobyte")){
                     calDt = inputDt*1024;
-                    answerDt.setText("" + calDt + " Kb");
+                    answerDt.setText("" + Math.round(calDt) + " Kb");
                 }
                 if(option1Dt.equals("Megabyte") && option2Dt.equals("Gigabyte")){
                     calDt = inputDt*.0009765625;
-                    answerDt.setText("" + calDt + " Gb");
+                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    answerDt.setText("" + cal + " Gb");
                 }
                 if(option1Dt.equals("Megabyte") && option2Dt.equals("Terabyte")){
                     calDt = inputDt*9.53674316e-7;
-                    answerDt.setText("" + calDt + " Tb");
+                    double cal = Math.round(calDt*1000000000000.0)/1000000000000.0;
+                    answerDt.setText("" + cal + " Tb");
                 }
 
                 //Gigabyte Conversions
                 if(option1Dt.equals("Gigabyte") && option2Dt.equals("Bit")){
                     calDt = inputDt*858993459e+1;
-                    answerDt.setText("" + calDt + " bit");
+                    answerDt.setText("" + Math.round(calDt) + " bit");
                 }
                 if(option1Dt.equals("Gigabyte") && option2Dt.equals("Byte")){
                     calDt = inputDt*1073741824;
-                    answerDt.setText("" + calDt + " b");
+                    answerDt.setText("" + Math.round(calDt) + " b");
                 }
                 if(option1Dt.equals("Gigabyte") && option2Dt.equals("Kilobyte")){
                     calDt = inputDt*1048576;
-                    answerDt.setText("" + calDt + " Kb");
+                    answerDt.setText("" + Math.round(calDt) + " Kb");
                 }
                 if(option1Dt.equals("Gigabyte") && option2Dt.equals("Megabyte")){
                     calDt = inputDt*1024;
-                    answerDt.setText("" + calDt + " Mb");
+                    answerDt.setText("" + Math.round(calDt) + " Mb");
                 }
                 if(option1Dt.equals("Gigabyte") && option2Dt.equals("Terabyte")){
                     calDt = inputDt*.0009765625;
-                    answerDt.setText("" + calDt + " Tb");
+                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    answerDt.setText("" + cal + " Tb");
                 }
 
                 //Terabyte Conversions
                 if(option1Dt.equals("Terabyte") && option2Dt.equals("Bit")){
                     calDt = inputDt*879609302e+4;
-                    answerDt.setText("" + calDt + " bit");
+                    answerDt.setText("" + Math.round(calDt) + " bit");
                 }
                 if(option1Dt.equals("Terabyte") && option2Dt.equals("Byte")){
                     calDt = inputDt*1099511627e+3;
-                    answerDt.setText("" + calDt + " b");
+                    answerDt.setText("" + Math.round(calDt) + " b");
                 }
                 if(option1Dt.equals("Terabyte") && option2Dt.equals("Kilobyte")){
                     calDt = inputDt*1073741824;
-                    answerDt.setText("" + calDt + " Kb");
+                    answerDt.setText("" + Math.round(calDt) + " Kb");
                 }
                 if(option1Dt.equals("Terabyte") && option2Dt.equals("Megabyte")){
                     calDt = inputDt*1048576;
-                    answerDt.setText("" + calDt + " Mb");
+                    answerDt.setText("" + Math.round(calDt) + " Mb");
                 }
                 if(option1Dt.equals("Terabyte") && option2Dt.equals("Gigabyte")){
                     calDt = inputDt*1024;
-                    answerDt.setText("" + calDt + " Gb");
+                    answerDt.setText("" + Math.round(calDt) + " Gb");
                 }
             }
         });

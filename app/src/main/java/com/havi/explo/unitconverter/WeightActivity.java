@@ -80,79 +80,93 @@ public class WeightActivity extends AppCompatActivity {
                     calwt = inputwt/16;
                     answerWt.setText("" + calwt + " lb");
                 }
-                if(option1wt.equals("Ounce") && option2wt.equals("Ton")){
+                if(option1wt.equals("Ounce") && option2wt.equals("US Ton")){
                     calwt = inputwt/32000;
-                    answerWt.setText("" + calwt + " ton");
+                    double cal = Math.round(calwt*10000000.0)/10000000.0;
+                    answerWt.setText("" + cal + " ton");
                 }
                 if(option1wt.equals("Ounce") && option2wt.equals("Milligram")){
                     calwt = inputwt/3.5274e-5;
-                    answerWt.setText("" + calwt + " mg");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " mg");
                 }
                 if(option1wt.equals("Ounce") && option2wt.equals("Gram")){
                     calwt = inputwt/0.035274;
-                    answerWt.setText("" + calwt + " g");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " g");
                 }
                 if(option1wt.equals("Ounce") && option2wt.equals("Kilogram")){
                     calwt = inputwt/35.274;
-                    answerWt.setText("" + calwt + " kg");
+                    double cal = Math.round(calwt*100000.0)/100000.0;
+                    answerWt.setText("" + cal + " kg");
                 }
 
                 //Pound Conversion
                 if(option1wt.equals("Pound") && option2wt.equals("Ounce")){
                     calwt = inputwt*16;
-                    answerWt.setText("" + calwt + " oz");
+                    answerWt.setText("" + Math.round(calwt) + " oz");
                 }
-                if(option1wt.equals("Pound") && option2wt.equals("Ton")){
+                if(option1wt.equals("Pound") && option2wt.equals("US Ton")){
                     calwt = inputwt/2000;
-                    answerWt.setText("" + calwt + " ton");
+                    double cal = Math.round(calwt*10000000.0)/10000000.0;
+                    answerWt.setText("" + cal + " ton");
                 }
                 if(option1wt.equals("Pound") && option2wt.equals("Milligram")){
-                    calwt = inputwt*453592;
-                    answerWt.setText("" + calwt + " mg");
+                    calwt = inputwt*453592.37;
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " mg");
                 }
                 if(option1wt.equals("Pound") && option2wt.equals("Gram")){
                     calwt = inputwt*453.592;
-                    answerWt.setText("" + calwt + " g");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " g");
                 }
                 if(option1wt.equals("Pound") && option2wt.equals("Kilogram")){
                     calwt = inputwt*.453592;
-                    answerWt.setText("" + calwt + " kg");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " kg");
                 }
 
                 //Ton Conversions
-                if(option1wt.equals("Ton") && option2wt.equals("Ounce")){
+                if(option1wt.equals("US Ton") && option2wt.equals("Ounce")){
                     calwt = inputwt*32000;
-                    answerWt.setText("" + calwt + " oz");
+                    answerWt.setText("" + Math.round(calwt) + " oz");
                 }
-                if(option1wt.equals("Ton") && option2wt.equals("Pound")){
+                if(option1wt.equals("US Ton") && option2wt.equals("Pound")){
                     calwt = inputwt*2000;
-                    answerWt.setText("" + calwt + " lb");
+                    answerWt.setText("" + Math.round(calwt) + " lb");
                 }
-                if(option1wt.equals("Ton") && option2wt.equals("Milligram")){
+                if(option1wt.equals("US Ton") && option2wt.equals("Milligram")){
                     calwt = inputwt*9.072e+8;
-                    answerWt.setText("" + calwt + " mg");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " mg");
                 }
-                if(option1wt.equals("Ton") && option2wt.equals("Gram")){
+                if(option1wt.equals("US Ton") && option2wt.equals("Gram")){
                     calwt = inputwt*907185;
-                    answerWt.setText("" + calwt + " g");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " g");
                 }
-                if(option1wt.equals("Ton") && option2wt.equals("Kilogram")){
+                if(option1wt.equals("US Ton") && option2wt.equals("Kilogram")){
                     calwt = inputwt*907.185;
-                    answerWt.setText("" + calwt + " kg");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " kg");
                 }
 
                 //Milligram Conversion
                 if(option1wt.equals("Milligram") && option2wt.equals("Ounce")){
                     calwt = inputwt*3.5274e-5;
-                    answerWt.setText("" + calwt + " oz");
+                    double cal = Math.round(calwt*10000000.0)/10000000.0;
+                    answerWt.setText("" + cal + " oz");
                 }
                 if(option1wt.equals("Milligram") && option2wt.equals("Pound")){
                     calwt = inputwt*2.2046e-6;
-                    answerWt.setText("" + calwt + " lb");
+                    double cal = Math.round(calwt*1000000000.0)/1000000000.0;
+                    answerWt.setText("" + cal + " lb");
                 }
-                if(option1wt.equals("Milligram") && option2wt.equals("Ton")){
+                if(option1wt.equals("Milligram") && option2wt.equals("US Ton")){
                     calwt = inputwt*1.1023e-9;
-                    answerWt.setText("" + calwt + " ton");
+                    double cal = Math.round(calwt*1000000000000.0)/1000000000000.0;
+                    answerWt.setText("" + cal + " ton");
                 }
                 if(option1wt.equals("Milligram") && option2wt.equals("Gram")){
                     calwt = inputwt*.001;
@@ -166,19 +180,22 @@ public class WeightActivity extends AppCompatActivity {
                 //Gram Conversions
                 if(option1wt.equals("Gram") && option2wt.equals("Ounce")){
                     calwt = inputwt*0.035274;
-                    answerWt.setText("" + calwt + " oz");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " oz");
                 }
                 if(option1wt.equals("Gram") && option2wt.equals("Pound")){
                     calwt = inputwt*0.00220462;
-                    answerWt.setText("" + calwt + " lb");
+                    double cal = Math.round(calwt*100000.0)/100000.0;
+                    answerWt.setText("" + cal + " lb");
                 }
-                if(option1wt.equals("Gram") && option2wt.equals("Ton")){
+                if(option1wt.equals("Gram") && option2wt.equals("US Ton")){
                     calwt = inputwt*1.1023e-6;
-                    answerWt.setText("" + calwt + " ton");
+                    double cal = Math.round(calwt*1000000000.0)/1000000000.0;
+                    answerWt.setText("" + cal + " ton");
                 }
                 if(option1wt.equals("Gram") && option2wt.equals("Milligram")){
                     calwt = inputwt*1000;
-                    answerWt.setText("" + calwt + " mg");
+                    answerWt.setText("" + Math.round(calwt) + " mg");
                 }
                 if(option1wt.equals("Gram") && option2wt.equals("Kilogram")){
                     calwt = inputwt/1000;
@@ -188,23 +205,26 @@ public class WeightActivity extends AppCompatActivity {
                 //Kilogram Conversion
                 if(option1wt.equals("Kilogram") && option2wt.equals("Ounce")){
                     calwt = inputwt*035.274;
-                    answerWt.setText("" + calwt + " oz");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " oz");
                 }
                 if(option1wt.equals("Kilogram") && option2wt.equals("Pound")){
                     calwt = inputwt*2.20462;
-                    answerWt.setText("" + calwt + " lb");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " lb");
                 }
-                if(option1wt.equals("Kilogram") && option2wt.equals("Ton")){
+                if(option1wt.equals("Kilogram") && option2wt.equals("US Ton")){
                     calwt = inputwt*1.1023e-3;
-                    answerWt.setText("" + calwt + " ton");
+                    double cal = Math.round(calwt*1000.0)/1000.0;
+                    answerWt.setText("" + cal + " ton");
                 }
                 if(option1wt.equals("Kilogram") && option2wt.equals("Milligram")){
                     calwt = inputwt*1000000;
-                    answerWt.setText("" + calwt + " mg");
+                    answerWt.setText("" + Math.round(calwt) + " mg");
                 }
                 if(option1wt.equals("Kilogram") && option2wt.equals("Gram")){
                     calwt = inputwt*1000;
-                    answerWt.setText("" + calwt + " g");
+                    answerWt.setText("" + Math.round(calwt) + " g");
                 }
 
 

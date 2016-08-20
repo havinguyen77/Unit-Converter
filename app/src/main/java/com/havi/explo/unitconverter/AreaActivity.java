@@ -75,175 +75,206 @@ public class AreaActivity extends AppCompatActivity {
                 double calAr;
 
                 //Square Inch Conversions
+                //I committed the code
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*.0069444444444;
-                    answerAr.setText("" +calAr + " sq in");
+                    double cal = Math.round(calAr*100000.0)/100000.0;
+                    answerAr.setText("" +cal + " sq in");
                 }
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*.0007716049383;
-                    answerAr.setText("" +calAr + " sq yd");
+                    double cal = Math.round(calAr*10000000.0)/10000000.0;
+                    answerAr.setText("" +cal + " sq yd");
                 }
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*2.49098e-10;
-                    answerAr.setText("" +calAr + " sq mi");
+                    double cal = Math.round(calAr*1000000000000.0)/1000000000000.0;
+                    answerAr.setText("" +cal + " sq mi");
                 }
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Acre")){
                     calAr = inputAr*1.5942e-7;
-                    answerAr.setText("" +calAr + " acre");
+                    double cal = Math.round(calAr*1000000000.0)/1000000000.0;
+                    answerAr.setText("" +cal + " acre");
                 }
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*6.4516;
-                    answerAr.setText("" +calAr + " sq cm");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq cm");
                 }
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Square Meter")){
                     calAr = inputAr*.00064516;
-                    answerAr.setText("" +calAr + " sq m");
+                    double cal = Math.round(calAr*10000000.0)/10000000.0;
+                    answerAr.setText("" +cal + " sq m");
                 }
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Square Kilometer")){
                     calAr = inputAr*6.4516e-10;
-                    answerAr.setText("" +calAr + " sq km");
+                    double cal = Math.round(calAr*1000000000000.0)/1000000000000.0;
+                    answerAr.setText("" +cal + " sq km");
                 }
 
                 //Square Feet Conversions
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*144;
-                    answerAr.setText("" +calAr + " sq in");
+                    answerAr.setText("" +Math.round(calAr) + " sq in");
                 }
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*(.111111);
-                    answerAr.setText("" +calAr + " sq yd");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq yd");
                 }
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*.00000003587006428;
-                    answerAr.setText("" +calAr + " sq mi");
+                    double cal = Math.round(calAr*1000000000000000.0)/1000000000000000.0;
+                    answerAr.setText("" +cal + " sq mi");
                 }
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Acre")){
                     calAr = inputAr*.00002295684114;
-                    answerAr.setText("" +calAr + " acre");
+                    double cal = Math.round(calAr*10000000.0)/10000000.0;
+                    answerAr.setText("" +cal + " acre");
                 }
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*929.0304;
-                    answerAr.setText("" +calAr + " sq cm");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq cm");
                 }
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Square Meter")){
                     calAr = inputAr*.09290304;
-                    answerAr.setText("" +calAr + " sq m");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq m");
                 }
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Square Kilometer")){
                     calAr = inputAr*9.2903e-8;
-                    answerAr.setText("" +calAr + " sq km");
+                    double cal = Math.round(calAr*1000000000000000.0)/1000000000000000.0;
+                    answerAr.setText("" +cal + " sq km");
                 }
 
                 //Square Yard Conversions
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*1296;
-                    answerAr.setText("" +calAr + " sq in");
+                    answerAr.setText("" +Math.round(calAr) + " sq in");
                 }
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*9;
-                    answerAr.setText("" +calAr + " sq ft");
+                    answerAr.setText("" +Math.round(calAr) + " sq ft");
                 }
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*3.2283e-7;
-                    answerAr.setText("" +calAr + " sq mi");
+                    double cal = Math.round(calAr*1000000000000.0)/1000000000000.0;
+                    answerAr.setText("" +cal + " sq mi");
                 }
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Acre")){
                     calAr = inputAr*.000206612;
-                    answerAr.setText("" +calAr + " acre");
+                    double cal = Math.round(calAr*1000000.0)/1000000.0;
+                    answerAr.setText("" +cal + " acre");
                 }
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*8361.2736;
-                    answerAr.setText("" +calAr + " sq cm");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq cm");
                 }
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Meter")){
                     calAr = inputAr*.83612736;
-                    answerAr.setText("" +calAr + " sq m");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq m");
                 }
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Kilometer")){
                     calAr = inputAr*8.3613e-7;
-                    answerAr.setText("" +calAr + " sq km");
+                    double cal = Math.round(calAr*1000000000000.0)/1000000000000.0;
+                    answerAr.setText("" +cal + " sq km");
                 }
 
                 //Square Mile Conversions
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*27878400;
-                    answerAr.setText("" +calAr + " sq ft");
+                    answerAr.setText("" +Math.round(calAr) + " sq ft");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*3097600;
-                    answerAr.setText("" +calAr + " sq yd");
+                    answerAr.setText("" +Math.round(calAr) + " sq yd");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*401448960e1;
-                    answerAr.setText("" +calAr + " sq in");
+                    answerAr.setText("" +Math.round(calAr) + " sq in");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Acre")){
                     calAr = inputAr*640;
-                    answerAr.setText("" +calAr + " acre");
+                    answerAr.setText("" +Math.round(calAr) + " acre");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*258998811e2;
-                    answerAr.setText("" +calAr + " sq cm");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq cm");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Meter")){
                     calAr = inputAr*2589988.11;
-                    answerAr.setText("" +calAr + " sq m");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq m");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Kilometer")){
                     calAr = inputAr*2.58998811;
-                    answerAr.setText("" +calAr + " sq km");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq km");
                 }
 
                 //Acre Conversions
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*43560;
-                    answerAr.setText("" +calAr + " sq ft");
+                    answerAr.setText("" +Math.round(calAr) + " sq ft");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*4840;
-                    answerAr.setText("" +calAr + " sq yd");
+                    answerAr.setText("" +Math.round(calAr) + " sq yd");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*.0015625;
-                    answerAr.setText("" +calAr + " sq mi");
+                    double cal = Math.round(calAr*100000.0)/100000.0;
+                    answerAr.setText("" +cal + " sq mi");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*6272640;
-                    answerAr.setText("" +calAr + " sq in");
+                    answerAr.setText("" +Math.round(calAr) + " sq in");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*40468564.22;
-                    answerAr.setText("" +calAr + " sq cm");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq cm");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Meter")){
                     calAr = inputAr*4046.856422;
-                    answerAr.setText("" +calAr + " sq m");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq m");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Kilometer")){
                     calAr = inputAr*.004046856422;
-                    answerAr.setText("" +calAr + " sq km");
+                    double cal = Math.round(calAr*10000000.0)/10000000.0;
+                    answerAr.setText("" +cal + " sq km");
                 }
 
                 //Square Centimeter Conversions
                 if(option1Ar.equals("Square Centimeter") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*.001076391042;
-                    answerAr.setText("" +calAr + " sq ft");
+                    double cal = Math.round(calAr*10000000.0)/10000000.0;
+                    answerAr.setText("" +cal + " sq ft");
                 }
                 if(option1Ar.equals("Square Centimeter") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*.0001195990046;
-                    answerAr.setText("" +calAr + " sq yd");
+                    double cal = Math.round(calAr*10000000.0)/10000000.0;
+                    answerAr.setText("" +cal + " sq yd");
                 }
                 if(option1Ar.equals("Square Centimeter") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*3.86102e-11;
-                    answerAr.setText("" +calAr + " sq mi");
+                    double cal = Math.round(calAr*10000000000000000000.0)/10000000000000000000.0;
+                    answerAr.setText("" +cal + " sq mi");
                 }
                 if(option1Ar.equals("Square Centimeter") && option2Ar.equals("Acre")){
                     calAr = inputAr*2.4711e-8;
-                    answerAr.setText("" +calAr + " acre");
+                    double cal = Math.round(calAr*1000000000000.0)/1000000000000.0;
+                    answerAr.setText("" +cal + " acre");
                 }
                 if(option1Ar.equals("Square Centimeter") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*.15500031;
-                    answerAr.setText("" +calAr + " sq in");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq in");
                 }
                 if(option1Ar.equals("Square Centimeter") && option2Ar.equals("Square Meter")){
                     calAr = inputAr*.0001;
@@ -257,27 +288,32 @@ public class AreaActivity extends AppCompatActivity {
                 //Square Meter Conversions
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*10.76391042;
-                    answerAr.setText("" +calAr + " sq ft");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq ft");
                 }
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*1.195990046;
-                    answerAr.setText("" +calAr + " sq yd");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq yd");
                 }
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*3.86102e-7;
-                    answerAr.setText("" +calAr + " sq mi");
+                    double cal = Math.round(calAr*1000000000000.0)/1000000000000.0;
+                    answerAr.setText("" +cal + " sq mi");
                 }
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Acre")){
                     calAr = inputAr*.0002471;
-                    answerAr.setText("" +calAr + " acre");
+                    double cal = Math.round(calAr*1000000.0)/1000000.0;
+                    answerAr.setText("" +cal + " acre");
                 }
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*1550.0031;
-                    answerAr.setText("" +calAr + " sq in");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq in");
                 }
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*10000;
-                    answerAr.setText("" +calAr + " sq cm");
+                    answerAr.setText("" +Math.round(calAr) + " sq cm");
                 }
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Square Kilometer")){
                     calAr = inputAr*.000001;
@@ -287,23 +323,27 @@ public class AreaActivity extends AppCompatActivity {
                 //Square Kilometer Conversions
                 if(option1Ar.equals("Square Kilometer") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*10763910.42;
-                    answerAr.setText("" +calAr + " sq ft");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq ft");
                 }
                 if(option1Ar.equals("Square Kilometer") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*1195990.046;
-                    answerAr.setText("" +calAr + " sq yd");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq yd");
                 }
                 if(option1Ar.equals("Square Kilometer") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*.38610215;
-                    answerAr.setText("" +calAr + " sq mi");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " sq mi");
                 }
                 if(option1Ar.equals("Square Kilometer") && option2Ar.equals("Acre")){
                     calAr = inputAr*247.105;
-                    answerAr.setText("" +calAr + " acre");
+                    double cal = Math.round(calAr*1000.0)/1000.0;
+                    answerAr.setText("" +cal + " acre");
                 }
                 if(option1Ar.equals("Square Kilometer") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*1550003100;
-                    answerAr.setText("" +calAr + " sq in");
+                    answerAr.setText("" +Math.round(calAr) + " sq in");
                 }
                 if(option1Ar.equals("Square Kilometer") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*1000000000e1;

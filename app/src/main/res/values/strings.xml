@@ -14,7 +14,7 @@
     <string-array name="weightOptions">
         <item>Ounce</item>
         <item>Pound</item>
-        <item>Ton</item>
+        <item>US Ton</item>
         <item>Milligram</item>
         <item>Gram</item>
         <item>Kilogram</item>
@@ -48,14 +48,14 @@
     </string-array>
 
     <string-array name="volumeOptions">
-        <item>Teaspoon</item>
-        <item>Tablespoon</item>
-        <item>Fluid Ounce</item>
-        <item>Cup</item>
-        <item>Pint</item>
-        <item>Quart</item>
-        <item>Gallon</item>
-        <item>Bushel</item>
+        <item>US Teaspoon</item>
+        <item>US Tablespoon</item>
+        <item>US Fluid Ounce</item>
+        <item>US Cup</item>
+        <item>US Pint</item>
+        <item>US Quart</item>
+        <item>US Gallon</item>
+        <item>US Bushel</item>
         <item>Cubic Inch</item>
         <item>Cubic Foot</item>
         <item>Cubic Yard</item>

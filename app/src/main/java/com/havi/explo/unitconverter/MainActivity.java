@@ -81,172 +81,225 @@ public class MainActivity extends AppCompatActivity {
 
                 if(option1.equals("Inch") && option2.equals("Centimeter")){
                     cal = input/.3937;
-                    answer.setText("" + cal + " cm");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " cm");
                 }
                 if(option1.equals("Inch") && option2.equals("Feet")){
                     cal = input/12;
-                    answer.setText("" + cal + " ft");
+                    String calVl2 = String.valueOf(cal);
+                    if(calVl2.contains(".249") || calVl2.contains(".25")){
+                        int cal2 = (int) cal;
+                        answer.setText("" + cal2 + " 1/4 ft");
+                    }
+                    else if (calVl2.contains(".5") || calVl2.contains(".49")){
+                        int cal2 = (int)cal;
+                        answer.setText("" + cal2 + " 1/2 ft");
+                    }
+                    else if (calVl2.contains(".749") || calVl2.contains(".75")){
+                        int cal2 = (int)cal;
+                        answer.setText("" + cal2 + " 3/4 ft");
+                    }
+                    else{double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " ft");}
                 }
                 if(option1.equals("Inch") && option2.equals("Yard")){
                     cal = input/36;
-                    answer.setText("" + cal + " yd");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " yd");
                 }
                 if(option1.equals("Inch") && option2.equals("Mile")){
                     cal = input/63360;
-                    answer.setText("" + cal + " mi");
+                    double cal2 = Math.round(cal*1000000000.0)/1000000000.0;
+                    answer.setText("" + cal2 + " mi");
                 }
                 if(option1.equals("Inch") && option2.equals("Millimeter")){
                     cal = input/.0393;
-                    answer.setText("" + cal + " mm");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " mm");
                 }
                 if(option1.equals("Inch") && option2.equals("Meter")){
                     cal = input/39.37;
-                    answer.setText("" + cal + " m");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " m");
                 }
                 if(option1.equals("Inch") && option2.equals("Kilometer")){
                     cal = input/39370;
-                    answer.setText("" + cal + " km");
+                    double cal2 = Math.round(cal*1000000000.0)/1000000000.0;
+                    answer.setText("" + cal2 + " km");
                 }
                 //Feet Conversions
                 if(option1.equals("Feet") && option2.equals("Inch")){
                     cal = input*12;
-                    answer.setText("" + cal + " in");
+                    answer.setText("" + Math.round(cal) + " in");
                 }
                 if(option1.equals("Feet") && option2.equals("Yard")){
                     cal = input/3;
-                    answer.setText("" + cal + " yd");
+                    String calVl2 = String.valueOf(cal);
+                    if (calVl2.contains(".3")){
+                        int cal2 = (int)cal;
+                        answer.setText("" + cal2 + " 1/3 yd");
+                    }
+                    else if (calVl2.contains(".6")){
+                        int cal2 = (int)cal;
+                        answer.setText("" + cal2 + " 2/3 yd");
+                    }
+                    else{
+                    answer.setText("" + Math.round(cal) + " yd");}
                 }
                 if(option1.equals("Feet") && option2.equals("Mile")){
                     cal = input/5280;
-                    answer.setText("" + cal + " mi");
+                    double cal2 = Math.round(cal*10000000.0)/10000000.0;
+                    answer.setText("" + cal2 + " mi");
                 }
                 if(option1.equals("Feet") && option2.equals("Millimeter")){
                     cal = input/.00328;
-                    answer.setText("" + cal + " mm");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " mm");
                 }
                 if(option1.equals("Feet") && option2.equals("Centimeter")){
                     cal = input/.0328;
-                    answer.setText("" + cal + " cm");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " cm");
                 }
                 if(option1.equals("Feet") && option2.equals("Meter")){
                     cal = input/3.2808;
-                    answer.setText("" + cal + " m");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " m");
                 }
                 if(option1.equals("Feet") && option2.equals("Kilometer")){
                     cal = input/3280.8;
-                    answer.setText("" + cal + " km");
+                    double cal2 = Math.round(cal*10000000.0)/10000000.0;
+                    answer.setText("" + cal2 + " km");
                 }
 
                 //Yard Conversion
                 if(option1.equals("Yard") && option2.equals("Inch")){
                     cal = input * 36;
-                    answer.setText("" + cal + " in");
+                    answer.setText("" + Math.round(cal) + " in");
                 }
                 if(option1.equals("Yard") && option2.equals("Feet")){
                     cal = input * 3;
-                    answer.setText("" + cal + " ft");
+                    answer.setText("" + Math.round(cal) + " ft");
                 }
                 if(option1.equals("Yard") && option2.equals("Mile")){
                     cal = input/1760;
-                    answer.setText("" + cal + " mi");
+                    double cal2 = Math.round(cal*10000000.0)/10000000.0;
+                    answer.setText("" + cal2 + " mi");
                 }
                 if(option1.equals("Yard") && option2.equals("Millimeter")){
                     cal = input/.00109361;
-                    answer.setText("" +cal + " mm");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" +cal2 + " mm");
                 }
                 if(option1.equals("Yard") && option2.equals("Centimeter")){
                     cal = input/.0109361;
-                    answer.setText("" +cal + " cm");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" +cal2 + " cm");
                 }
                 if(option1.equals("Yard") && option2.equals("Meter")){
                     cal = input/1.09361;
-                    answer.setText("" +cal + " m");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" +cal2 + " m");
                 }
                 if(option1.equals("Yard") && option2.equals("Kilometer")){
                     cal = input/1093.61;
-                    answer.setText("" +cal + " km");
+                    double cal2 = Math.round(cal*10000000.0)/10000000.0;
+                    answer.setText("" +cal2 + " km");
                 }
 
                 //Mile Conversion
                 if(option1.equals("Mile") && option2.equals("Inch")){
                     cal = input*63360;
-                    answer.setText("" +cal + " in");
+                    answer.setText("" +Math.round(cal) + " in");
                 }
                 if(option1.equals("Mile") && option2.equals("Feet")){
                     cal = input*5280;
-                    answer.setText("" +cal + " ft");
+                    answer.setText("" +Math.round(cal) + " ft");
                 }
                 if(option1.equals("Mile") && option2.equals("Yard")){
                     cal = input*1760;
-                    answer.setText("" +cal + " yd");
+                    answer.setText("" +Math.round(cal) + " yd");
                 }
                 if(option1.equals("Mile") && option2.equals("Millimeter")){
                     cal = input*1609344;
-                    answer.setText("" +cal + " mm");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" +cal2 + " mm");
                 }
                 if(option1.equals("Mile") && option2.equals("Centimeter")){
                     cal = input*160934.4;
-                    answer.setText("" +cal + " cm");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" +cal2 + " cm");
                 }
                 if(option1.equals("Mile") && option2.equals("Meter")){
                     cal = input*1609.344;
-                    answer.setText("" +cal + " m");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" +cal2 + " m");
                 }
                 if(option1.equals("Mile") && option2.equals("Kilometer")){
                     cal = input*1.609344;
-                    answer.setText("" +cal + " km");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" +cal2 + " km");
                 }
 
                 //Millimeter Conversion
                 if(option1.equals("Millimeter") && option2.equals("Inch")){
                     cal = input*0.0393701;
-                    answer.setText("" + cal + " in");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " in");
                 }
                 if(option1.equals("Millimeter") && option2.equals("Feet")){
                     cal = input*0.00328084;
-                    answer.setText("" + cal + " ft");
+                    double cal2 = Math.round(cal*100000.0)/100000.0;
+                    answer.setText("" + cal2 + " ft");
                 }
                 if(option1.equals("Millimeter") && option2.equals("Yard")){
                     cal = input*0.00109361;
-                    answer.setText("" + cal + " yd");
+                    double cal2 = Math.round(cal*100000.0)/100000.0;
+                    answer.setText("" + cal2 + " yd");
                 }
                 if(option1.equals("Millimeter") && option2.equals("Mile")){
                     cal = input*6.2137e-7;
-                    answer.setText("" + cal + " mi");
+                    double cal2 = Math.round(cal*1000000000.0)/1000000000.0;
+                    answer.setText("" + cal2 + " mi");
                 }
                 if(option1.equals("Millimeter") && option2.equals("Centimeter")){
                     cal = input/10;
-                    answer.setText("" + cal + " cm");
+                    answer.setText("" + Math.round(cal) + " cm");
                 }
                 if(option1.equals("Millimeter") && option2.equals("Meter")){
                     cal = input/1000;
-                    answer.setText("" + cal + " m");
+                    answer.setText("" + Math.round(cal) + " m");
                 }
                 if(option1.equals("Millimeter") && option2.equals("Kilometer")){
                     cal = input/1000000;
-                    answer.setText("" + cal + " km");
+                    double cal2 = Math.round(cal*1000000000.0)/1000000000.0;
+                    answer.setText("" + cal2 + " km");
                 }
 
                 //Centimeter Conversions
                 if(option1.equals("Centimeter") && option2.equals("Inch")){
                     cal = input * 0.3937;
-                    answer.setText("" + cal + " in");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " in");
                 }
                 if(option1.equals("Centimeter") && option2.equals("Feet")){
                     cal = input * 0.0328084;
-                    answer.setText("" + cal + " ft");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " ft");
                 }
                 if(option1.equals("Centimeter") && option2.equals("Yard")){
                     cal = input * 0.0109361;
-                    answer.setText("" + cal + " yd");
+                    double cal2 = Math.round(cal*100000.0)/100000.0;
+                    answer.setText("" + cal2 + " yd");
                 }
                 if(option1.equals("Centimeter") && option2.equals("Mile")){
                     cal = input*6.2137e-6;
-                    answer.setText("" + cal + " mi");
+                    double cal2 = Math.round(cal*1000000000.0)/1000000000.0;
+                    answer.setText("" + cal2 + " mi");
                 }
                 if(option1.equals("Centimeter") && option2.equals("Millimeter")){
                     cal = input*10;
-                    answer.setText("" + cal + " mm");
+                    answer.setText("" + Math.round(cal) + " mm");
                 }
                 if(option1.equals("Centimeter") && option2.equals("Meter")){
                     cal = input/100;
@@ -254,33 +307,38 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(option1.equals("Centimeter") && option2.equals("Kilometer")){
                     cal = input/100000;
-                    answer.setText("" + cal + " mm");
+                    double cal2 = Math.round(cal*10000000.0)/10000000.0;
+                    answer.setText("" + cal2 + " mm");
                 }
 
                 //Meter Conversions
                 if(option1.equals("Meter") && option2.equals("Inch")){
                     cal = input * 39.3701;
-                    answer.setText("" + cal + " in");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " in");
                 }
                 if(option1.equals("Meter") && option2.equals("Feet")){
                     cal = input * 3.28084;
-                    answer.setText("" + cal + " ft");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " ft");
                 }
                 if(option1.equals("Meter") && option2.equals("Yard")){
                     cal = input * 1.09361;
-                    answer.setText("" + cal + " yd");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " yd");
                 }
                 if(option1.equals("Meter") && option2.equals("Mile")){
                     cal = input * 0.000621371;
-                    answer.setText("" + cal + " mi");
+                    double cal2 = Math.round(cal*10000000.0)/10000000.0;
+                    answer.setText("" + cal2 + " mi");
                 }
                 if(option1.equals("Meter") && option2.equals("Millimeter")){
                     cal = input *1000 ;
-                    answer.setText("" + cal + " mm");
+                    answer.setText("" + Math.round(cal) + " mm");
                 }
                 if(option1.equals("Meter") && option2.equals("Centimeter")){
                     cal = input * 100;
-                    answer.setText("" + cal + " cm");
+                    answer.setText("" + Math.round(cal) + " cm");
                 }
                 if(option1.equals("Meter") && option2.equals("Kilometer")){
                     cal = input/ 1000;
@@ -290,31 +348,35 @@ public class MainActivity extends AppCompatActivity {
                 //Kilometer Conversions
                 if(option1.equals("Kilometer") && option2.equals("Inch")){
                     cal = input * 39370.1;
-                    answer.setText("" + cal + " in");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " in");
                 }
                 if(option1.equals("Kilometer") && option2.equals("Feet")){
                     cal = input * 3280.84;
-                    answer.setText("" + cal + " ft");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " ft");
                 }
                 if(option1.equals("Kilometer") && option2.equals("Yard")){
                     cal = input * 1093.61;
-                    answer.setText("" + cal + " yd");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " yd");
                 }
                 if(option1.equals("Kilometer") && option2.equals("Mile")){
                     cal = input * 0.621371;
-                    answer.setText("" + cal + " mi");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " mi");
                 }
                 if(option1.equals("Kilometer") && option2.equals("Millimeter")){
                     cal = input * 1000000;
-                    answer.setText("" + cal + " mm");
+                    answer.setText("" + Math.round(cal) + " mm");
                 }
                 if(option1.equals("Kilometer") && option2.equals("Centimeter")){
                     cal = input * 100000;
-                    answer.setText("" + cal + " cm");
+                    answer.setText("" + Math.round(cal) + " cm");
                 }
                 if(option1.equals("Kilometer") && option2.equals("Meter")){
-                    cal = input * 10000;
-                    answer.setText("" + cal + " m");
+                    cal = input * 1000;
+                    answer.setText("" + Math.round(cal) + " m");
                 }
 
 

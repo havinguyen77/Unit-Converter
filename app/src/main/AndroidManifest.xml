@@ -20,7 +20,11 @@
 
 
         <activity
-            android:name=".VolumeActivity"
+            android:name=".AreaActivity"
+            android:parentActivityName=".FirstPageActivity">
+        </activity>
+
+        <activity android:name=".VolumeActivity"
             android:parentActivityName=".FirstPageActivity">
         </activity>
 
@@ -37,10 +41,6 @@
         </activity>
 
         <activity android:name=".DataActivity"
-            android:parentActivityName=".FirstPageActivity">
-        </activity>
-
-        <activity android:name=".AreaActivity"
             android:parentActivityName=".FirstPageActivity">
         </activity>
 

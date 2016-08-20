@@ -13,11 +13,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Weight Converter"
+        android:text="Weight"
         android:id="@+id/textViewTitle"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="40dp" />
+        android:textSize="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
 
     <Spinner
         android:layout_width="wrap_content"
@@ -63,7 +67,9 @@
         android:text="Convert"
         android:id="@+id/buttonConvert"
         android:layout_below="@+id/spinner2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@color/accent_material_dark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,7 +83,9 @@
         android:textSize="30dp"
         android:layout_alignRight="@+id/spinner2"
         android:layout_alignEnd="@+id/spinner2"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="@color/accent_material_dark"
+        android:textStyle="bold"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -85,12 +93,13 @@
         android:id="@+id/editTextInputWeight"
         android:layout_alignLeft="@+id/textViewTitle"
         android:layout_alignStart="@+id/textViewTitle"
-        android:layout_toStartOf="@+id/spinner1"
+        android:layout_toStartOf="@+id/textViewDisplayTo"
         android:layout_above="@+id/textViewDisplayTo"
         android:text="0"
-        android:layout_alignRight="@+id/textViewDisplayTo"
-        android:layout_alignEnd="@+id/textViewDisplayTo"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:layout_toLeftOf="@+id/textViewDisplayTo"
+        android:backgroundTint="@color/accent_material_dark"
+        android:singleLine="true" />
 
 
 </RelativeLayout>

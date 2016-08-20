@@ -76,57 +76,69 @@ public class TempActivity extends AppCompatActivity {
                 //Celsius Conversion
                 if(option1Tm.equals("Celsius") && option2Tm.equals("Fahrenheit")){
                     calTm = inputTm*1.8+32;
-                    answerTm.setText("" +calTm + " °F");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °F");
                 }
                 if(option1Tm.equals("Celsius") && option2Tm.equals("Kelvin")){
                     calTm = inputTm+273.15;
-                    answerTm.setText("" +calTm + " K");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " K");
                 }
                 if(option1Tm.equals("Celsius") && option2Tm.equals("Rankine")){
                     calTm = (inputTm+273.15)*1.8;
-                    answerTm.setText("" +calTm + " °Ra");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °Ra");
                 }
 
                 //Fahrenheit Conversion
                 if(option1Tm.equals("Fahrenheit") && option2Tm.equals("Celsius")){
                     calTm = (inputTm-32)/1.8;
-                    answerTm.setText("" +calTm + " °C");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °C");
                 }
                 if(option1Tm.equals("Fahrenheit") && option2Tm.equals("Kelvin")){
                     calTm = (inputTm+ 459.67)*(.55555555555555);
-                    answerTm.setText("" +calTm + " K");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " K");
                 }
                 if(option1Tm.equals("Fahrenheit") && option2Tm.equals("Rankine")){
                     calTm = inputTm + 459.67;
-                    answerTm.setText("" +calTm + " °Ra");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °Ra");
                 }
 
                 //Kelvin Conversions
                 if(option1Tm.equals("Kelvin") && option2Tm.equals("Celsius")){
                     calTm = inputTm-273.15;
-                    answerTm.setText("" +calTm + " °C");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °C");
                 }
                 if(option1Tm.equals("Kelvin") && option2Tm.equals("Fahrenheit")){
                     calTm = 1.8*(inputTm-273.15)+32;
-                    answerTm.setText("" +calTm + " °F");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °F");
                 }
                 if(option1Tm.equals("Kelvin") && option2Tm.equals("Rankine")){
                     calTm = inputTm*1.8;
-                    answerTm.setText("" +calTm + " °Ra");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °Ra");
                 }
 
                 //Rankine Conversions
                 if(option1Tm.equals("Rankine") && option2Tm.equals("Celsius")){
                     calTm = (inputTm-491.67)*(.555555555555555555);
-                    answerTm.setText("" +calTm + " °C");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °C");
                 }
                 if(option1Tm.equals("Rankine") && option2Tm.equals("Kelvin")){
                     calTm = (inputTm)*(.555555555555555555555);
-                    answerTm.setText("" +calTm + " K");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " K");
                 }
                 if(option1Tm.equals("Rankine") && option2Tm.equals("Fahrenheit")){
                     calTm = (inputTm-491.67) + 32;
-                    answerTm.setText("" +calTm + " °F");
+                    double cal = Math.round(calTm*1000.0)/1000.0;
+                    answerTm.setText("" +cal + " °F");
                 }
 
 
