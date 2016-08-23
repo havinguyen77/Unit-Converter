@@ -78,16 +78,16 @@ public class VolumeActivity extends AppCompatActivity {
                 if(option1Vl.equals("US Teaspoon") && option2Vl.equals("US Tablespoon")){
                     calVl = inputVl*.333333;
                     String calVl2 = String.valueOf(calVl);
-                    if (calVl2.contains(".3")){
+                    if (calVl2.contains(".33")){
                         int cal = (int)calVl;
                         answerVl.setText("" + cal + " 1/3 tbsp");
                     }
-                    else if (calVl2.contains(".6")){
+                    else if (calVl2.contains(".66")){
                         int cal = (int)calVl;
                         answerVl.setText("" + cal + " 2/3 tbsp");
                     }
                     else{
-                    answerVl.setText("" + Math.round(calVl) + " tbsp");}
+                    answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " tbsp");}
                 }
                 if(option1Vl.equals("US Teaspoon") && option2Vl.equals("US Fluid Ounce")){
                     calVl = inputVl*.1666667;
@@ -113,7 +113,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal + " 5/6 fl oz");
                     }
                     else{
-                        answerVl.setText("" + Math.round(calVl) + " fl oz");}
+                        answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " fl oz");}
 
                 }
                 if(option1Vl.equals("US Teaspoon") && option2Vl.equals("US Cup")){
@@ -226,7 +226,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal + " 1/2 fl oz");
                     }
                     else{
-                    answerVl.setText("" + Math.round(calVl) +" fl oz");}
+                    answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 +" fl oz");}
                 }
                 if(option1Vl.equals("US Tablespoon") && option2Vl.equals("US Cup")){
                     calVl = inputVl * .0625;
@@ -292,7 +292,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal + " 15/16 cup");
                     }
                     else{
-                        answerVl.setText("" + Math.round(calVl) + " cup");}
+                        answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " cup");}
 
                 }
                 if(option1Vl.equals("US Tablespoon") && option2Vl.equals("US Pint")){
@@ -535,11 +535,11 @@ public class VolumeActivity extends AppCompatActivity {
                 //Fluid Ounce Conversions
                 if(option1Vl.equals("US Fluid Ounce") && option2Vl.equals("US Teaspoon")){
                     calVl = inputVl * 6;
-                    answerVl.setText("" + Math.round(calVl) + " tsp");
+                    answerVl.setText("" + calVl + " tsp");
                 }
                 if(option1Vl.equals("US Fluid Ounce") && option2Vl.equals("US Tablespoon")){
                     calVl = inputVl * 2;
-                    answerVl.setText("" + Math.round(calVl) + " tbsp");
+                    answerVl.setText("" + calVl + " tbsp");
                 }
                 if(option1Vl.equals("US Fluid Ounce") && option2Vl.equals("US Cup")){
                     calVl = inputVl * .125;
@@ -573,7 +573,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal +" 7/8 cup");
                     }
                     else{
-                        answerVl.setText("" + Math.round(calVl) + " cup");}
+                        answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " cup");}
 
                 }
                 if(option1Vl.equals("US Fluid Ounce") && option2Vl.equals("US Pint")){
@@ -640,7 +640,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal + " 15/16 pt");
                     }
                     else{
-                        answerVl.setText("" + Math.round(calVl) + " pt");}
+                        answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " pt");}
 
                 }
                 if(option1Vl.equals("US Fluid Ounce") && option2Vl.equals("US Quart")){
@@ -816,15 +816,15 @@ public class VolumeActivity extends AppCompatActivity {
                 //Cup Conversions
                 if(option1Vl.equals("US Cup") && option2Vl.equals("US Teaspoon")){
                     calVl = inputVl * 48;
-                    answerVl.setText("" + Math.round(calVl) + " tsp");
+                    answerVl.setText("" + calVl + " tsp");
                 }
                 if(option1Vl.equals("US Cup") && option2Vl.equals("US Tablespoon")){
                     calVl = inputVl * 16;
-                    answerVl.setText("" + Math.round(calVl) + " tbsp");
+                    answerVl.setText("" + calVl + " tbsp");
                 }
                 if(option1Vl.equals("US Cup") && option2Vl.equals("US Fluid Ounce")){
                     calVl = inputVl * 8;
-                    answerVl.setText("" + Math.round(calVl) + " fl oz");
+                    answerVl.setText("" + calVl + " fl oz");
                 }
                 if(option1Vl.equals("US Cup") && option2Vl.equals("US Pint")){
                     calVl = inputVl * .5;
@@ -834,7 +834,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal + " 1/2 pt");
                     }
                     else{
-                    answerVl.setText("" + Math.round(calVl) + " pt");}
+                    answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " pt");}
                 }
                 if(option1Vl.equals("US Cup") && option2Vl.equals("US Quart")){
                     calVl = inputVl * .25;
@@ -852,7 +852,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal + " 3/4 qt");
                     }
                     else{
-                    answerVl.setText("" + Math.round(calVl) + " qt");}
+                    answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " qt");}
                 }
                 if(option1Vl.equals("US Cup") && option2Vl.equals("US Gallon")){
                     calVl = inputVl * .0625;
@@ -918,7 +918,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal + " 15/16 gal");
                     }
                     else{
-                    answerVl.setText("" + Math.round(calVl) + " gal");}
+                    answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " gal");}
                 }
                 if(option1Vl.equals("US Cup") && option2Vl.equals("US Bushel")){
                     calVl = inputVl * .006713804745;
@@ -959,19 +959,19 @@ public class VolumeActivity extends AppCompatActivity {
                 //Pint Conversions
                 if(option1Vl.equals("US Pint") && option2Vl.equals("US Teaspoon")){
                     calVl = inputVl * 96;
-                    answerVl.setText("" + Math.round(calVl) + " tsp");
+                    answerVl.setText("" + calVl + " tsp");
                 }
                 if(option1Vl.equals("US Pint") && option2Vl.equals("US Tablespoon")){
                     calVl = inputVl * 32;
-                    answerVl.setText("" + Math.round(calVl) + " tbsp");
+                    answerVl.setText("" + calVl + " tbsp");
                 }
                 if(option1Vl.equals("US Pint") && option2Vl.equals("US Fluid Ounce")){
                     calVl = inputVl * 16;
-                    answerVl.setText("" + Math.round(calVl) + " fl oz");
+                    answerVl.setText("" + calVl + " fl oz");
                 }
                 if(option1Vl.equals("US Pint") && option2Vl.equals("US Cup")){
                     calVl = inputVl * 2;
-                    answerVl.setText("" + Math.round(calVl) + " cup");
+                    answerVl.setText("" + calVl + " cup");
                 }
                 if(option1Vl.equals("US Pint") && option2Vl.equals("US Quart")){
                     calVl = inputVl * .5;
@@ -981,7 +981,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal + " 1/2 qt");
                     }
                     else{
-                    answerVl.setText("" + Math.round(calVl) + " qt");}
+                    answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " qt");}
                 }
                 if(option1Vl.equals("US Pint") && option2Vl.equals("US Gallon")){
                     calVl = inputVl * .125;
@@ -1015,7 +1015,7 @@ public class VolumeActivity extends AppCompatActivity {
                         answerVl.setText("" + cal +" 7/8 gal");
                     }
                     else{
-                    answerVl.setText("" + Math.round(calVl) + " gal");}
+                    answerVl.setText("" + Math.round(calVl*1000.0)/1000.0 + " gal");}
                 }
                 if(option1Vl.equals("US Pint") && option2Vl.equals("US Bushel")){
                     calVl = inputVl * .0134276;
@@ -1056,41 +1056,41 @@ public class VolumeActivity extends AppCompatActivity {
                 //Quart Conversions
                 if(option1Vl.equals("US Quart") && option2Vl.equals("US Teaspoon")){
                     calVl = inputVl *192;
-                    answerVl.setText("" + Math.round(calVl) + " tsp");
+                    answerVl.setText("" + calVl + " tsp");
                 }
                 if(option1Vl.equals("US Quart") && option2Vl.equals("US Tablespoon")){
                     calVl = inputVl *64;
-                    answerVl.setText("" + Math.round(calVl) + " tbsp");
+                    answerVl.setText("" + calVl + " tbsp");
                 }
                 if(option1Vl.equals("US Quart") && option2Vl.equals("US Fluid Ounce")){
                     calVl = inputVl *32;
-                    answerVl.setText("" + Math.round(calVl) + " fl oz");
+                    answerVl.setText("" + calVl + " fl oz");
                 }
                 if(option1Vl.equals("US Quart") && option2Vl.equals("US Cup")){
                     calVl = inputVl *4;
-                    answerVl.setText("" + Math.round(calVl) + " cup");
+                    answerVl.setText("" +calVl + " cup");
                 }
                 if(option1Vl.equals("US Quart") && option2Vl.equals("US Pint")){
                     calVl = inputVl *2;
-                    answerVl.setText("" + Math.round(calVl) + " pt");
+                    answerVl.setText("" + calVl + " pt");
                 }
                 if(option1Vl.equals("US Quart") && option2Vl.equals("US Gallon")){
                     calVl = inputVl *.25;
                     String calVl2 = String.valueOf(calVl);
                     if(calVl2.contains(".249") || calVl2.contains(".25")){
                         int cal = (int) calVl;
-                        answerVl.setText("" + cal + " 1/4 qt");
+                        answerVl.setText("" + cal + " 1/4 gal");
                     }
                     else if (calVl2.contains(".5") || calVl2.contains(".49")){
                         int cal = (int)calVl;
-                        answerVl.setText("" + cal + " 1/2 qt");
+                        answerVl.setText("" + cal + " 1/2 gal");
                     }
                     else if (calVl2.contains(".749") || calVl2.contains(".75")){
                         int cal = (int)calVl;
-                        answerVl.setText("" + cal + " 3/4 qt");
+                        answerVl.setText("" + cal + " 3/4 gal");
                     }
                     else{
-                    answerVl.setText("" + calVl + " gal");}
+                    answerVl.setText("" +Math.round(calVl*1000.0)/1000.0 + " gal");}
                 }
                 if(option1Vl.equals("US Quart") && option2Vl.equals("US Bushel")){
                     calVl = inputVl *.0268552189;
@@ -1131,27 +1131,27 @@ public class VolumeActivity extends AppCompatActivity {
                 //Gallon Conversions
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("US Teaspoon")){
                     calVl = inputVl * 768;
-                    answerVl.setText("" + Math.round(calVl) + " tsp");
+                    answerVl.setText("" + calVl + " tsp");
                 }
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("US Tablespoon")){
                     calVl = inputVl * 256;
-                    answerVl.setText("" + Math.round(calVl) + " tbsp");
+                    answerVl.setText("" + calVl + " tbsp");
                 }
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("US Fluid Ounce")){
                     calVl = inputVl * 128;
-                    answerVl.setText("" + Math.round(calVl) + " fl oz");
+                    answerVl.setText("" + calVl + " fl oz");
                 }
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("US Cup")){
                     calVl = inputVl * 16;
-                    answerVl.setText("" + Math.round(calVl) + " cup");
+                    answerVl.setText("" + calVl + " cup");
                 }
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("US Pint")){
                     calVl = inputVl * 8;
-                    answerVl.setText("" + Math.round(calVl) + " pt");
+                    answerVl.setText("" + calVl + " pt");
                 }
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("US Quart")){
                     calVl = inputVl * 4;
-                    answerVl.setText("" + Math.round(calVl) + " qt");
+                    answerVl.setText("" + calVl + " qt");
                 }
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("US Bushel")){
                     calVl = inputVl * .1074208759;
@@ -1160,7 +1160,7 @@ public class VolumeActivity extends AppCompatActivity {
                 }
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("Cubic Inch")){
                     calVl = inputVl * 231;
-                    answerVl.setText("" + Math.round(calVl) + " cu in");
+                    answerVl.setText("" + calVl + " cu in");
                 }
                 if(option1Vl.equals("US Gallon") && option2Vl.equals("Cubic Foot")){
                     calVl = inputVl * .133680556;
@@ -1365,7 +1365,7 @@ public class VolumeActivity extends AppCompatActivity {
                 }
                 if(option1Vl.equals("Cubic Foot") && option2Vl.equals("Cubic Inch")){
                     calVl = inputVl * 1728;
-                    answerVl.setText("" + Math.round(calVl) + " cu in");
+                    answerVl.setText("" + calVl + " cu in");
                 }
                 if(option1Vl.equals("Cubic Foot") && option2Vl.equals("Cubic Yard")){
                     calVl = inputVl * .0370370370;
@@ -1431,11 +1431,11 @@ public class VolumeActivity extends AppCompatActivity {
                 }
                 if(option1Vl.equals("Cubic Yard") && option2Vl.equals("Cubic Inch")){
                     calVl = inputVl * 46656;
-                    answerVl.setText("" + Math.round(calVl) + " cu in");
+                    answerVl.setText("" + calVl + " cu in");
                 }
                 if(option1Vl.equals("Cubic Yard") && option2Vl.equals("Cubic Foot")){
                     calVl = inputVl * 27;
-                    answerVl.setText("" + Math.round(calVl) + " cu ft");
+                    answerVl.setText("" + calVl + " cu ft");
                 }
                 if(option1Vl.equals("Cubic Yard") && option2Vl.equals("Cubic Meter")){
                     calVl = inputVl * .7645548;

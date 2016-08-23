@@ -130,7 +130,8 @@ public class MainActivity extends AppCompatActivity {
                 //Feet Conversions
                 if(option1.equals("Feet") && option2.equals("Inch")){
                     cal = input*12;
-                    answer.setText("" + Math.round(cal) + " in");
+                    double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " in");
                 }
                 if(option1.equals("Feet") && option2.equals("Yard")){
                     cal = input/3;
@@ -144,7 +145,8 @@ public class MainActivity extends AppCompatActivity {
                         answer.setText("" + cal2 + " 2/3 yd");
                     }
                     else{
-                    answer.setText("" + Math.round(cal) + " yd");}
+                        double cal2 = Math.round(cal*1000.0)/1000.0;
+                    answer.setText("" + cal2 + " yd");}
                 }
                 if(option1.equals("Feet") && option2.equals("Mile")){
                     cal = input/5280;
@@ -175,11 +177,11 @@ public class MainActivity extends AppCompatActivity {
                 //Yard Conversion
                 if(option1.equals("Yard") && option2.equals("Inch")){
                     cal = input * 36;
-                    answer.setText("" + Math.round(cal) + " in");
+                    answer.setText("" + cal + " in");
                 }
                 if(option1.equals("Yard") && option2.equals("Feet")){
                     cal = input * 3;
-                    answer.setText("" + Math.round(cal) + " ft");
+                    answer.setText("" + cal + " ft");
                 }
                 if(option1.equals("Yard") && option2.equals("Mile")){
                     cal = input/1760;
@@ -210,15 +212,15 @@ public class MainActivity extends AppCompatActivity {
                 //Mile Conversion
                 if(option1.equals("Mile") && option2.equals("Inch")){
                     cal = input*63360;
-                    answer.setText("" +Math.round(cal) + " in");
+                    answer.setText("" +cal + " in");
                 }
                 if(option1.equals("Mile") && option2.equals("Feet")){
                     cal = input*5280;
-                    answer.setText("" +Math.round(cal) + " ft");
+                    answer.setText("" +cal + " ft");
                 }
                 if(option1.equals("Mile") && option2.equals("Yard")){
                     cal = input*1760;
-                    answer.setText("" +Math.round(cal) + " yd");
+                    answer.setText("" +cal + " yd");
                 }
                 if(option1.equals("Mile") && option2.equals("Millimeter")){
                     cal = input*1609344;
@@ -264,11 +266,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(option1.equals("Millimeter") && option2.equals("Centimeter")){
                     cal = input/10;
-                    answer.setText("" + Math.round(cal) + " cm");
+                    answer.setText("" + cal + " cm");
                 }
                 if(option1.equals("Millimeter") && option2.equals("Meter")){
                     cal = input/1000;
-                    answer.setText("" + Math.round(cal) + " m");
+                    answer.setText("" + cal + " m");
                 }
                 if(option1.equals("Millimeter") && option2.equals("Kilometer")){
                     cal = input/1000000;
@@ -299,7 +301,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(option1.equals("Centimeter") && option2.equals("Millimeter")){
                     cal = input*10;
-                    answer.setText("" + Math.round(cal) + " mm");
+                    answer.setText("" + cal + " mm");
                 }
                 if(option1.equals("Centimeter") && option2.equals("Meter")){
                     cal = input/100;
@@ -334,11 +336,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(option1.equals("Meter") && option2.equals("Millimeter")){
                     cal = input *1000 ;
-                    answer.setText("" + Math.round(cal) + " mm");
+                    answer.setText("" + cal + " mm");
                 }
                 if(option1.equals("Meter") && option2.equals("Centimeter")){
                     cal = input * 100;
-                    answer.setText("" + Math.round(cal) + " cm");
+                    answer.setText("" + cal + " cm");
                 }
                 if(option1.equals("Meter") && option2.equals("Kilometer")){
                     cal = input/ 1000;
@@ -368,15 +370,15 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(option1.equals("Kilometer") && option2.equals("Millimeter")){
                     cal = input * 1000000;
-                    answer.setText("" + Math.round(cal) + " mm");
+                    answer.setText("" + cal + " mm");
                 }
                 if(option1.equals("Kilometer") && option2.equals("Centimeter")){
                     cal = input * 100000;
-                    answer.setText("" + Math.round(cal) + " cm");
+                    answer.setText("" + cal + " cm");
                 }
                 if(option1.equals("Kilometer") && option2.equals("Meter")){
                     cal = input * 1000;
-                    answer.setText("" + Math.round(cal) + " m");
+                    answer.setText("" + cal + " m");
                 }
 
 

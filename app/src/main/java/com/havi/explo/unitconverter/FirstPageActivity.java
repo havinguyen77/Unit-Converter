@@ -16,6 +16,9 @@ public class FirstPageActivity extends AppCompatActivity {
     ImageButton data;
     ImageButton area;
     ImageButton volume;
+    ImageButton frequency;
+    ImageButton pressure;
+    ImageButton energy;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +78,37 @@ public class FirstPageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goToDisplay = new Intent(FirstPageActivity.this, VolumeActivity.class);
                 startActivity(goToDisplay);
+            }
+        });
+
+        frequency = (ImageButton)findViewById(R.id.imageButtonFrequency);
+        frequency.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToDisplay = new Intent(FirstPageActivity.this, FrequencyActivity.class);
+                startActivity(goToDisplay);
+
+
+            }
+        }));
+
+        pressure = (ImageButton)findViewById(R.id.imageButtonPressure);
+        pressure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToDisplay = new Intent(FirstPageActivity.this, PressureActivity.class);
+                startActivity(goToDisplay);
+
+            }
+        });
+
+        energy = (ImageButton)findViewById(R.id.imageButtonEnergy);
+        energy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToDisplay = new Intent(FirstPageActivity.this, EnergyActivity.class);
+                startActivity(goToDisplay);
+
             }
         });
 

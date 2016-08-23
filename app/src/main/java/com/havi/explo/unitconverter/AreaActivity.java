@@ -115,7 +115,7 @@ public class AreaActivity extends AppCompatActivity {
                 //Square Feet Conversions
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*144;
-                    answerAr.setText("" +Math.round(calAr) + " sq in");
+                    answerAr.setText("" +calAr + " sq in");
                 }
                 if(option1Ar.equals("Square Feet") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*(.111111);
@@ -151,11 +151,11 @@ public class AreaActivity extends AppCompatActivity {
                 //Square Yard Conversions
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*1296;
-                    answerAr.setText("" +Math.round(calAr) + " sq in");
+                    answerAr.setText("" +calAr + " sq in");
                 }
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*9;
-                    answerAr.setText("" +Math.round(calAr) + " sq ft");
+                    answerAr.setText("" +calAr + " sq ft");
                 }
                 if(option1Ar.equals("Square Yard") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*3.2283e-7;
@@ -186,19 +186,19 @@ public class AreaActivity extends AppCompatActivity {
                 //Square Mile Conversions
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*27878400;
-                    answerAr.setText("" +Math.round(calAr) + " sq ft");
+                    answerAr.setText("" +calAr + " sq ft");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*3097600;
-                    answerAr.setText("" +Math.round(calAr) + " sq yd");
+                    answerAr.setText("" +calAr + " sq yd");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*401448960e1;
-                    answerAr.setText("" +Math.round(calAr) + " sq in");
+                    answerAr.setText("" +calAr + " sq in");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Acre")){
                     calAr = inputAr*640;
-                    answerAr.setText("" +Math.round(calAr) + " acre");
+                    answerAr.setText("" +calAr + " acre");
                 }
                 if(option1Ar.equals("Square Mile") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*258998811e2;
@@ -219,11 +219,11 @@ public class AreaActivity extends AppCompatActivity {
                 //Acre Conversions
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Feet")){
                     calAr = inputAr*43560;
-                    answerAr.setText("" +Math.round(calAr) + " sq ft");
+                    answerAr.setText("" +calAr + " sq ft");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Yard")){
                     calAr = inputAr*4840;
-                    answerAr.setText("" +Math.round(calAr) + " sq yd");
+                    answerAr.setText("" +calAr + " sq yd");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Mile")){
                     calAr = inputAr*.0015625;
@@ -232,7 +232,7 @@ public class AreaActivity extends AppCompatActivity {
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*6272640;
-                    answerAr.setText("" +Math.round(calAr) + " sq in");
+                    answerAr.setText("" +calAr + " sq in");
                 }
                 if(option1Ar.equals("Acre") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*40468564.22;
@@ -313,7 +313,7 @@ public class AreaActivity extends AppCompatActivity {
                 }
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*10000;
-                    answerAr.setText("" +Math.round(calAr) + " sq cm");
+                    answerAr.setText("" +calAr + " sq cm");
                 }
                 if(option1Ar.equals("Square Meter") && option2Ar.equals("Square Kilometer")){
                     calAr = inputAr*.000001;
@@ -343,7 +343,7 @@ public class AreaActivity extends AppCompatActivity {
                 }
                 if(option1Ar.equals("Square Kilometer") && option2Ar.equals("Square Inch")){
                     calAr = inputAr*1550003100;
-                    answerAr.setText("" +Math.round(calAr) + " sq in");
+                    answerAr.setText("" +calAr + " sq in");
                 }
                 if(option1Ar.equals("Square Kilometer") && option2Ar.equals("Square Centimeter")){
                     calAr = inputAr*1000000000e1;

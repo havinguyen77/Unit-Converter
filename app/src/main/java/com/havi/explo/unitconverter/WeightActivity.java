@@ -104,7 +104,7 @@ public class WeightActivity extends AppCompatActivity {
                 //Pound Conversion
                 if(option1wt.equals("Pound") && option2wt.equals("Ounce")){
                     calwt = inputwt*16;
-                    answerWt.setText("" + Math.round(calwt) + " oz");
+                    answerWt.setText("" + calwt + " oz");
                 }
                 if(option1wt.equals("Pound") && option2wt.equals("US Ton")){
                     calwt = inputwt/2000;
@@ -130,11 +130,11 @@ public class WeightActivity extends AppCompatActivity {
                 //Ton Conversions
                 if(option1wt.equals("US Ton") && option2wt.equals("Ounce")){
                     calwt = inputwt*32000;
-                    answerWt.setText("" + Math.round(calwt) + " oz");
+                    answerWt.setText("" + calwt + " oz");
                 }
                 if(option1wt.equals("US Ton") && option2wt.equals("Pound")){
                     calwt = inputwt*2000;
-                    answerWt.setText("" + Math.round(calwt) + " lb");
+                    answerWt.setText("" + calwt + " lb");
                 }
                 if(option1wt.equals("US Ton") && option2wt.equals("Milligram")){
                     calwt = inputwt*9.072e+8;
@@ -195,7 +195,7 @@ public class WeightActivity extends AppCompatActivity {
                 }
                 if(option1wt.equals("Gram") && option2wt.equals("Milligram")){
                     calwt = inputwt*1000;
-                    answerWt.setText("" + Math.round(calwt) + " mg");
+                    answerWt.setText("" + calwt + " mg");
                 }
                 if(option1wt.equals("Gram") && option2wt.equals("Kilogram")){
                     calwt = inputwt/1000;
@@ -220,11 +220,11 @@ public class WeightActivity extends AppCompatActivity {
                 }
                 if(option1wt.equals("Kilogram") && option2wt.equals("Milligram")){
                     calwt = inputwt*1000000;
-                    answerWt.setText("" + Math.round(calwt) + " mg");
+                    answerWt.setText("" + calwt + " mg");
                 }
                 if(option1wt.equals("Kilogram") && option2wt.equals("Gram")){
                     calwt = inputwt*1000;
-                    answerWt.setText("" + Math.round(calwt) + " g");
+                    answerWt.setText("" + calwt + " g");
                 }
 
 

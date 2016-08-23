@@ -64,5 +64,40 @@
         <item>Liter</item>
     </string-array>
 
+    <string-array name="pressureOptions">
+        <item>Atmosphere</item>
+        <item>Bar</item>
+        <item>Millibar</item>
+        <item>Pascal(N/m^2)</item>
+        <item>Kilo Pascal</item>
+        <item>Pound/Sq Inch</item>
+        <item>Pound/Sq Foot</item>
+        <item>Inch Mercury</item>
+        <item>Millimeter Mercury(Torr)</item>
+    </string-array>
+
+    <string-array name="energyOptions">
+        <item>Joules</item>
+        <item>British Thermal Unit</item>
+        <item>Quad</item>
+        <item>Kilocalorie</item>
+        <item>Megatonne of Coal Equivalent</item>
+        <item>Barrel of Oil Equivalent</item>
+        <item>Megatonne of Oil Equivalent</item>
+        <item>Kilowatt-Hour</item>
+        <item>Terawatt-Year</item>
+    </string-array>
+
+    <string-array name="frequencyOptions">
+        <item>Nanohertz</item>
+        <item>Microhertz</item>
+        <item>Millihertz</item>
+        <item>Hertz</item>
+        <item>Kilohertz</item>
+        <item>Megahertz</item>
+        <item>Gigahertz</item>
+        <item>Terahertz</item>
+    </string-array>
+
 
 </resources>

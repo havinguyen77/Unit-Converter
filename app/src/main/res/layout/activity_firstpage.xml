@@ -35,7 +35,8 @@
         android:scaleType="fitXY"
         android:layout_toEndOf="@+id/imageButtonWeight"
         android:layout_marginBottom="340dp"
-        android:background="#673c8b" />
+        android:background="#673c8b"
+        android:layout_toRightOf="@+id/imageButtonWeight" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -146,12 +147,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Data"
         android:id="@+id/textViewData"
-        android:layout_marginTop="101dp"
+        android:layout_marginTop="96dp"
         android:textAlignment="center"
         android:layout_alignTop="@+id/imageButtonData"
         android:layout_alignLeft="@+id/textViewLength"
-        android:layout_alignStart="@+id/textViewLength"
-        android:layout_marginLeft="5dp" />
+        android:layout_alignStart="@+id/textViewLength" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -182,8 +182,96 @@
         android:id="@+id/textView"
         android:textSize="40dp"
         android:textAlignment="center"
-        android:layout_above="@+id/imageButtonWeight"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="9dp" />
+        android:layout_marginTop="12dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonFrequency"
+        android:layout_below="@+id/textViewData"
+        android:layout_alignLeft="@+id/imageButtonData"
+        android:layout_alignStart="@+id/imageButtonData"
+        android:layout_marginTop="7dp"
+        android:minWidth="95dp"
+        android:minHeight="95dp"
+        android:src="@drawable/frequency"
+        android:scaleType="fitXY"
+        android:background="#f5f2df"
+        android:layout_marginLeft="0dp"
+        android:layout_alignRight="@+id/imageButtonData"
+        android:layout_alignEnd="@+id/imageButtonData"
+        android:layout_marginBottom="90dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonPressure"
+        android:layout_alignTop="@+id/imageButtonFrequency"
+        android:minWidth="95dp"
+        android:minHeight="95dp"
+        android:src="@drawable/pressure"
+        android:background="#8edce3"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/imageButtonFrequency"
+        android:layout_toLeftOf="@+id/imageButtonVolume"
+        android:layout_toRightOf="@+id/imageButtonFrequency"
+        android:layout_toEndOf="@+id/imageButtonFrequency"
+        android:layout_marginRight="137.5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonEnergy"
+        android:layout_alignTop="@+id/imageButtonPressure"
+        android:minWidth="95dp"
+        android:minHeight="95dp"
+        android:src="@drawable/energy"
+        android:scaleType="fitXY"
+        android:background="#f9fd02"
+        android:layout_alignLeft="@+id/imageButtonVolume"
+        android:layout_alignStart="@+id/imageButtonVolume"
+        android:layout_alignRight="@+id/imageButtonVolume"
+        android:layout_alignEnd="@+id/imageButtonVolume"
+        android:layout_alignBottom="@+id/imageButtonPressure" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Frequency"
+        android:id="@+id/textViewFrequency"
+        android:layout_below="@+id/imageButtonPressure"
+        android:layout_alignLeft="@+id/imageButtonFrequency"
+        android:layout_alignStart="@+id/imageButtonFrequency"
+        android:layout_toLeftOf="@+id/imageButtonPressure"
+        android:layout_toStartOf="@+id/imageButtonPressure"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pressure"
+        android:id="@+id/textViewPressure"
+        android:layout_alignTop="@+id/textViewFrequency"
+        android:layout_toRightOf="@+id/textViewFrequency"
+        android:layout_alignRight="@+id/imageButtonPressure"
+        android:layout_alignEnd="@+id/imageButtonPressure"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Energy"
+        android:id="@+id/textViewEnergy"
+        android:layout_alignTop="@+id/textViewPressure"
+        android:layout_alignLeft="@+id/imageButtonEnergy"
+        android:layout_alignStart="@+id/imageButtonEnergy"
+        android:layout_alignRight="@+id/imageButtonEnergy"
+        android:layout_alignEnd="@+id/imageButtonEnergy"
+        android:textAlignment="center" />
 
 </RelativeLayout>
