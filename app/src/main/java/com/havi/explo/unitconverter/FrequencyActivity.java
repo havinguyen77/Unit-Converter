@@ -334,7 +334,7 @@ public class FrequencyActivity extends AppCompatActivity {
                 //Terahertz Conversion
                 //Messed up conversion to Nano
                 if (option1Fq.equals("Terahertz") && option2Fq.equals("Nanohertz")){
-                    calFq = inputFq*1e21;
+                    calFq = inputFq*Math.pow(1,21);
                     double cal = Math.round(calFq*1000.0)/1000.0;
                     answerFq.setText("" + cal+ " nHz");
                 }
