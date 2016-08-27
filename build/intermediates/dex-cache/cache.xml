@@ -1,2 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="5844a04cae634a23bc5f42f617f1d2df889b9918">
+        <dex dex="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4439bfc82bc7cf9eccb8ca3d259c342af2cd6d7c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_7666f171cef246a8b38eeaf50028c943dcdcaaa9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_b60b94f16b9946dda2b13c00f9753659590d0012/classes.dex" />
+    </item>
+    <item
+        jar="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="7405d2771be0cf70b38f407c3aaa8ac99eb66ade">
+        <dex dex="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_75e58e71c852e35b0b7abe2a80eab542568fa150/classes.dex" />
+    </item>
+    <item
+        jar="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_21ebcb68a6c49a8ff0529c68dd1718281d8e4cb8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_d290ac37d2388051b80d03833534adaf02ce4f79/classes.dex" />
+    </item>
+    <item
+        jar="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_c4a3dfbe66d94342064810b15d0a6c9b2b684801/classes.dex" />
+    </item>
+    <item
+        jar="/Users/brianramirez/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.1.1/3af19f153122737b372622fa6c81dd11a1c6b999/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/brianramirez/Desktop/Unit-Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_308ad13b183b5b1468c978f5f1ce02f64b65b2f6/classes.dex" />
+    </item>
+
+</items>
