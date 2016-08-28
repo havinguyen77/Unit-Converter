@@ -1,270 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonWeight"
-        android:minWidth="95dp"
-        android:maxHeight="95dp"
-        android:maxWidth="95dp"
-        android:minHeight="95dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/weight"
-        android:scaleType="fitXY"
-        android:layout_marginBottom="340dp"
-        android:layout_marginLeft="275dp"
-        android:layout_alignTop="@+id/imageButtonTemp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonTemp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="75dp"
-        android:minWidth="95dp"
-        android:minHeight="95dp"
-        android:maxWidth="95dp"
-        android:maxHeight="95dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="19dp"
-        android:src="@drawable/temperature"
-        android:scaleType="fitXY"
-        android:layout_toEndOf="@+id/imageButtonWeight"
-        android:layout_marginBottom="340dp"
-        android:layout_toRightOf="@+id/imageButtonWeight" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonLength"
-        android:layout_alignBottom="@+id/imageButtonWeight"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:minWidth="95dp"
-        android:minHeight="95dp"
-        android:maxWidth="95dp"
-        android:maxHeight="95dp"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/length"
-        android:scaleType="fitXY"
-        android:layout_marginRight="246dp"
-        android:layout_alignTop="@+id/imageButtonWeight" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Length"
-        android:id="@+id/textViewLength"
-        android:layout_below="@+id/imageButtonLength"
-        android:layout_alignRight="@+id/imageButtonLength"
-        android:layout_alignEnd="@+id/imageButtonLength"
-        android:layout_marginRight="28dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="7dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Weight"
-        android:id="@+id/textViewWeight"
-        android:layout_alignTop="@+id/textViewLength"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Temperature"
-        android:id="@+id/textViewTemp"
-        android:textAlignment="center"
-        android:layout_alignTop="@+id/textViewWeight"
-        android:layout_alignRight="@+id/imageButtonTemp"
-        android:layout_alignEnd="@+id/imageButtonTemp"
-        android:layout_marginRight="7dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonData"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/imageButtonLength"
-        android:layout_alignStart="@+id/imageButtonLength"
-        android:maxHeight="95dp"
-        android:maxWidth="95dp"
-        android:minHeight="95dp"
-        android:minWidth="95dp"
-        android:src="@drawable/data"
-        android:scaleType="fitXY"
-        android:layout_marginBottom="300dp"
-        android:layout_marginTop="120dp"
-        android:layout_alignRight="@+id/imageButtonLength"
-        android:layout_alignEnd="@+id/imageButtonLength" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonArea"
-        android:layout_alignTop="@+id/imageButtonData"
-        android:layout_centerHorizontal="true"
-        android:maxHeight="95dp"
-        android:maxWidth="95dp"
-        android:minHeight="95dp"
-        android:minWidth="95dp"
-        android:src="@drawable/area"
-        android:scaleType="fitXY"
-        android:layout_marginBottom="210dp"
-        android:layout_marginLeft="275dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonVolume"
-        android:layout_alignTop="@+id/imageButtonArea"
-        android:maxHeight="95dp"
-        android:maxWidth="95dp"
-        android:minHeight="95dp"
-        android:minWidth="95dp"
-        android:src="@drawable/volume"
-        android:scaleType="fitXY"
-        android:layout_marginBottom="210dp"
-        android:layout_alignRight="@+id/imageButtonTemp"
-        android:layout_alignEnd="@+id/imageButtonTemp"
-        android:layout_alignLeft="@+id/imageButtonTemp"
-        android:layout_alignStart="@+id/imageButtonTemp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Data"
-        android:id="@+id/textViewData"
-        android:layout_marginTop="96dp"
-        android:textAlignment="center"
-        android:layout_alignTop="@+id/imageButtonData"
-        android:layout_alignLeft="@+id/textViewLength"
-        android:layout_alignStart="@+id/textViewLength" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Area"
-        android:id="@+id/textViewArea"
-        android:layout_alignTop="@+id/textViewData"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Volume"
-        android:id="@+id/textViewVolume"
-        android:textAlignment="center"
-        android:layout_alignTop="@+id/textViewArea"
-        android:layout_alignRight="@+id/imageButtonVolume"
-        android:layout_alignEnd="@+id/imageButtonVolume"
-        android:layout_marginRight="24dp"
-        android:layout_marginEnd="24dp" />
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#fff">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Unit Converter"
         android:id="@+id/textView"
-        android:textSize="40dp"
+        android:textSize="0dp"
         android:textAlignment="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonFrequency"
-        android:layout_below="@+id/textViewData"
-        android:layout_alignLeft="@+id/imageButtonData"
-        android:layout_alignStart="@+id/imageButtonData"
-        android:layout_marginTop="7dp"
-        android:minWidth="95dp"
-        android:minHeight="95dp"
-        android:src="@drawable/fequency"
-        android:scaleType="fitXY"
-        android:layout_marginLeft="0dp"
-        android:layout_alignRight="@+id/imageButtonData"
-        android:layout_alignEnd="@+id/imageButtonData"
-        android:layout_marginBottom="90dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonPressure"
-        android:layout_alignTop="@+id/imageButtonFrequency"
-        android:minWidth="95dp"
-        android:minHeight="95dp"
-        android:src="@drawable/pressure"
-        android:scaleType="fitXY"
-        android:layout_alignBottom="@+id/imageButtonFrequency"
-        android:layout_toLeftOf="@+id/imageButtonVolume"
-        android:layout_toRightOf="@+id/imageButtonFrequency"
-        android:layout_toEndOf="@+id/imageButtonFrequency"
-        android:layout_marginRight="137.5dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
         android:id="@+id/imageButtonEnergy"
-        android:layout_alignTop="@+id/imageButtonPressure"
-        android:minWidth="95dp"
-        android:minHeight="95dp"
-        android:src="@drawable/energy"
         android:scaleType="fitXY"
-        android:layout_alignLeft="@+id/imageButtonVolume"
-        android:layout_alignStart="@+id/imageButtonVolume"
-        android:layout_alignRight="@+id/imageButtonVolume"
-        android:layout_alignEnd="@+id/imageButtonVolume"
-        android:layout_alignBottom="@+id/imageButtonPressure" />
+        android:background="#ffffff"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/energy" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonArea"
+        android:scaleType="fitXY"
+        android:background="#ffffff"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+        android:layout_alignBottom="@+id/imageButtonEnergy"
+        android:src="@drawable/area"
+        android:layout_alignRight="@+id/imageButtonLength"
+        android:layout_alignEnd="@+id/imageButtonLength"
+        android:layout_alignLeft="@+id/imageButtonLength"
+        android:layout_alignStart="@+id/imageButtonLength"
+        android:layout_alignTop="@+id/imageButtonEnergy" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonData"
+        android:scaleType="fitXY"
+        android:background="#ffffff"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+        android:src="@drawable/data"
+        android:layout_alignTop="@+id/imageButtonArea"
+        android:layout_toRightOf="@+id/imageButtonArea"
+        android:layout_toEndOf="@+id/imageButtonArea"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Frequency"
-        android:id="@+id/textViewFrequency"
-        android:layout_below="@+id/imageButtonPressure"
-        android:layout_alignLeft="@+id/imageButtonFrequency"
-        android:layout_alignStart="@+id/imageButtonFrequency"
-        android:layout_toLeftOf="@+id/imageButtonPressure"
-        android:layout_toStartOf="@+id/imageButtonPressure"
-        android:textAlignment="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Pressure"
-        android:id="@+id/textViewPressure"
-        android:layout_alignTop="@+id/textViewFrequency"
-        android:layout_toRightOf="@+id/textViewFrequency"
-        android:layout_alignRight="@+id/imageButtonPressure"
-        android:layout_alignEnd="@+id/imageButtonPressure"
-        android:textAlignment="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Energy"
-        android:id="@+id/textViewEnergy"
-        android:layout_alignTop="@+id/textViewPressure"
+        android:textSize="20sp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageButtonEnergy"
         android:layout_alignLeft="@+id/imageButtonEnergy"
         android:layout_alignStart="@+id/imageButtonEnergy"
-        android:layout_alignRight="@+id/imageButtonEnergy"
-        android:layout_alignEnd="@+id/imageButtonEnergy"
-        android:textAlignment="center" />
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        android:textSize="20sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imageButtonArea"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:textSize="20sp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageButtonData"
+        android:layout_alignLeft="@+id/imageButtonData"
+        android:layout_alignStart="@+id/imageButtonData"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonFrequency"
+        android:scaleType="fitXY"
+        android:background="#ffffff"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+        android:src="@drawable/fequency"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/imageButtonEnergy"
+        android:layout_alignStart="@+id/imageButtonEnergy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frequency"
+        android:textSize="20sp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/imageButtonFrequency"
+        android:layout_alignLeft="@+id/imageButtonFrequency"
+        android:layout_alignStart="@+id/imageButtonFrequency" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonLength"
+        android:scaleType="fitXY"
+        android:background="#ffffff"
+        android:src="@drawable/length"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+        android:layout_alignBottom="@+id/imageButtonFrequency"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:textSize="20sp"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/imageButtonLength"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonPressure"
+        android:scaleType="fitXY"
+        android:background="#ffffff"
+        android:src="@drawable/pressure"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+        android:layout_alignTop="@+id/imageButtonLength"
+        android:layout_alignLeft="@+id/imageButtonData"
+        android:layout_alignStart="@+id/imageButtonData" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/imageButtonWeight"
+        android:layout_alignRight="@+id/imageButtonPressure"
+        android:layout_alignEnd="@+id/imageButtonPressure"
+        android:layout_alignLeft="@+id/imageButtonPressure"
+        android:layout_alignStart="@+id/imageButtonPressure" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonWeight"
+        android:scaleType="fitXY"
+        android:background="#fff"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+        android:src="@drawable/weight"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/imageButtonFrequency"
+        android:layout_alignStart="@+id/imageButtonFrequency" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="20sp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/imageButtonWeight"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonVolume"
+        android:scaleType="fitXY"
+        android:background="#fff"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+        android:src="@drawable/volume"
+        android:layout_alignBottom="@+id/imageButtonWeight"
+        android:layout_alignLeft="@+id/imageButtonLength"
+        android:layout_alignStart="@+id/imageButtonLength" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:textSize="20sp"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/imageButtonVolume"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonTemp"
+        android:scaleType="fitXY"
+        android:background="#fff"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:minHeight="95dp"
+        android:minWidth="95dp"
+        android:src="@drawable/temperature"
+        android:layout_alignBottom="@+id/imageButtonVolume"
+        android:layout_alignLeft="@+id/imageButtonPressure"
+        android:layout_alignStart="@+id/imageButtonPressure" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textSize="18sp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/imageButtonTemp"
+        android:layout_alignLeft="@+id/imageButtonTemp"
+        android:layout_alignStart="@+id/imageButtonTemp" />
 
 </RelativeLayout>
