@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class WeightActivity extends AppCompatActivity {
 
     Button convertWt;
@@ -22,6 +25,8 @@ public class WeightActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapter1Wt;
     ArrayAdapter<CharSequence> adapter2Wt;
 
+    private AdView mAdView;
+
 
 
     @Override
@@ -29,6 +34,9 @@ public class WeightActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weight);
 
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         convertWt = (Button)findViewById(R.id.buttonConvert);
         inputUnitWt = (EditText)findViewById(R.id.editTextInputWeight);

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "305786365870",
+    "firebase_url": "https://unit-converter-92ec4.firebaseio.com",
+    "project_id": "unit-converter-92ec4",
+    "storage_bucket": "unit-converter-92ec4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305786365870:android:3f4ca382a20982a2",
+        "android_client_info": {
+          "package_name": "com.havi.explo.unitconverter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305786365870-5irv34ptro48o5so1tm4p48bo9hboro8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6-l1rlJPzz7kJ2XXzFMufsjaPs6EpRRI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

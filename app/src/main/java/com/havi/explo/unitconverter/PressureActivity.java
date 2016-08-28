@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class PressureActivity extends AppCompatActivity {
 
     Button convertPr;
@@ -22,10 +25,17 @@ public class PressureActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapter1Pr;
     ArrayAdapter<CharSequence> adapter2Pr;
 
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pressure);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         convertPr = (Button)findViewById(R.id.buttonConvert);
         inputUnitPr = (EditText)findViewById(R.id.editTextInput);

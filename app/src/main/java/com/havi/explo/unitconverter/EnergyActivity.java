@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class EnergyActivity extends AppCompatActivity {
 
     Button convertEg;
@@ -22,11 +25,18 @@ public class EnergyActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapter1Eg;
     ArrayAdapter<CharSequence> adapter2Eg;
 
+    private AdView mAdView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_energy);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         convertEg = (Button)findViewById(R.id.buttonConvert);
         inputUnitEg = (EditText)findViewById(R.id.editTextInput);

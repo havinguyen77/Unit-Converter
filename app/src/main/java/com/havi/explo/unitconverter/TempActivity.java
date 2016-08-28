@@ -11,6 +11,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class TempActivity extends AppCompatActivity {
 
     Button convertTm;
@@ -23,10 +26,17 @@ public class TempActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapter1Tm;
     ArrayAdapter<CharSequence> adapter2Tm;
 
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temp);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         convertTm = (Button)findViewById(R.id.buttonConvert);
         inputUnitTm = (EditText)findViewById(R.id.editTextInput);

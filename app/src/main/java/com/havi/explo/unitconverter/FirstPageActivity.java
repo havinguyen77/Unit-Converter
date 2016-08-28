@@ -7,6 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 
 public class FirstPageActivity extends AppCompatActivity {
 
@@ -19,12 +24,18 @@ public class FirstPageActivity extends AppCompatActivity {
     ImageButton frequency;
     ImageButton pressure;
     ImageButton energy;
+    private FirebaseAnalytics mFirebaseAnalytics;
+    private AdView mAdView;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstpage);
 
-        //Good start with this code! However make sure you declare the first activity in the Manifest.xml
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
         length = (ImageButton)findViewById(R.id.imageButtonLength);

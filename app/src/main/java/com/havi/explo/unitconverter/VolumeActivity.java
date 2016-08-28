@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class VolumeActivity extends AppCompatActivity {
     Button convertVl;
     EditText inputUnitVl;
@@ -21,11 +24,17 @@ public class VolumeActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapter1Vl;
     ArrayAdapter<CharSequence> adapter2Vl;
 
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volume);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         convertVl = (Button)findViewById(R.id.buttonConvert);
         inputUnitVl = (EditText)findViewById(R.id.editTextInput);
