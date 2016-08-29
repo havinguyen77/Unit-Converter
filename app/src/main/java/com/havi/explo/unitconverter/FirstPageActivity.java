@@ -24,6 +24,7 @@ public class FirstPageActivity extends AppCompatActivity {
     ImageButton frequency;
     ImageButton pressure;
     ImageButton energy;
+
     private FirebaseAnalytics mFirebaseAnalytics;
     private AdView mAdView;
 
