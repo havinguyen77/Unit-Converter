@@ -82,7 +82,6 @@ public class VolumeActivity extends AppCompatActivity {
                 double inputVl = Double.valueOf(inputUnitVl.getText().toString());
                 double calVl;
 
-                //I fucking hate you!
 
                 if(option1Vl.equals("US Teaspoon") && option2Vl.equals("US Tablespoon")){
                     calVl = inputVl*.333333;

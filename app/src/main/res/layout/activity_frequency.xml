@@ -80,7 +80,7 @@
         android:layout_marginTop="31dp"
         android:layout_alignLeft="@+id/spinner2"
         android:layout_alignStart="@+id/spinner2"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:layout_alignRight="@+id/spinner2"
         android:layout_alignEnd="@+id/spinner2"
         android:textAlignment="center"
@@ -108,7 +108,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id">
+        ads:adUnitId="@string/banner_frequency_ad_unit_id">
     </com.google.android.gms.ads.AdView>
 
 
