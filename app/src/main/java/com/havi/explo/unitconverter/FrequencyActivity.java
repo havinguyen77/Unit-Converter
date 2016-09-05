@@ -1,5 +1,7 @@
 package com.havi.explo.unitconverter;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -79,8 +81,26 @@ public class FrequencyActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String option1Fq = (String) spinnerFirstFq.getSelectedItem();
                 String option2Fq = (String) spinnerSecondFq.getSelectedItem();
-                double inputFq = Double.valueOf(inputUnitFq.getText().toString());
+                double inputFq = 0.0;
                 double calFq;
+                if(inputUnitFq.getText().toString().equals("")){
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(FrequencyActivity.this);
+                    builder1.setTitle("Missing Input");
+                    builder1.setMessage("Please input a value");
+                    builder1.setCancelable(false);
+
+                    builder1.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+                }else{
+                    inputFq = Double.valueOf(inputUnitFq.getText().toString());
+                }
+
 
                 //Nanohertz Conversions
                 if (option1Fq.equals("Nanohertz") && option2Fq.equals("Microhertz")){

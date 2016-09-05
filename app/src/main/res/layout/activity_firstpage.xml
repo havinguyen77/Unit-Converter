@@ -18,7 +18,7 @@
 
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="23dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginStart="23dp"
         android:layout_marginTop="35dp"
         android:src="@drawable/energy" />
@@ -55,8 +55,8 @@
         android:layout_alignTop="@+id/imageButtonArea"
         android:layout_toRightOf="@+id/imageButtonArea"
         android:layout_toEndOf="@+id/imageButtonArea"
-        android:layout_marginLeft="25dp"
-        android:layout_marginStart="21dp" />
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -166,7 +166,8 @@
         android:minWidth="95dp"
         android:layout_alignTop="@+id/imageButtonLength"
         android:layout_alignLeft="@+id/imageButtonData"
-        android:layout_alignStart="@+id/imageButtonData" />
+        android:layout_alignStart="@+id/imageButtonData"
+        android:layout_marginLeft="0dp" />
 
     <TextView
         android:layout_width="wrap_content"

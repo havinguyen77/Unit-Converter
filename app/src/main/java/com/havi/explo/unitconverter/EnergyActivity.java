@@ -1,5 +1,7 @@
 package com.havi.explo.unitconverter;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -80,8 +82,26 @@ public class EnergyActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String option1Eg = (String) spinnerFirstEg.getSelectedItem();
                 String option2Eg = (String) spinnerSecondEg.getSelectedItem();
-                double inputEg = Double.valueOf(inputUnitEg.getText().toString());
+                double inputEg = 0.0;
                 double calEg;
+                if(inputUnitEg.getText().toString().equals("")){
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(EnergyActivity.this);
+                    builder1.setTitle("Missing Input");
+                    builder1.setMessage("Please input a value");
+                    builder1.setCancelable(false);
+
+                    builder1.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+                }else{
+                    inputEg = Double.valueOf(inputUnitEg.getText().toString());
+                }
+
                 System.out.println(option1Eg);
                 System.out.println(option2Eg);
 

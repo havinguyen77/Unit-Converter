@@ -82,8 +82,26 @@ public class AreaActivity extends AppCompatActivity {
 
                 String option1Ar = (String) spinnerFirstAr.getSelectedItem();
                 String option2Ar = (String) spinnerSecondAr.getSelectedItem();
-                double inputAr = Double.valueOf(inputUnitAr.getText().toString());
+                double inputAr = 0.0;
                 double calAr;
+                if(inputUnitAr.getText().toString().equals("")){
+                        AlertDialog.Builder builder1 = new AlertDialog.Builder(AreaActivity.this);
+                        builder1.setTitle("Missing Input");
+                        builder1.setMessage("Please input a value");
+                        builder1.setCancelable(false);
+
+                        builder1.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+                        AlertDialog alert11 = builder1.create();
+                        alert11.show();
+                }else{
+                    inputAr = Double.valueOf(inputUnitAr.getText().toString());
+                }
+
 
                 //Square Inch Conversions
                 //I committed the code

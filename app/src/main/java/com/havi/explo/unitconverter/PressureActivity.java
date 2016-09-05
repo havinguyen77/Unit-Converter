@@ -1,5 +1,7 @@
 package com.havi.explo.unitconverter;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -79,8 +81,26 @@ public class PressureActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String option1Pr = (String) spinnerFirstPr.getSelectedItem();
                 String option2Pr = (String) spinnerSecondPr.getSelectedItem();
-                double inputPr = Double.valueOf(inputUnitPr.getText().toString());
+                double inputPr = 0.0;
                 double calPr;
+                if(inputUnitPr.getText().toString().equals("")){
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(PressureActivity.this);
+                    builder1.setTitle("Missing Input");
+                    builder1.setMessage("Please input a value");
+                    builder1.setCancelable(false);
+
+                    builder1.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+                }else{
+                    inputPr = Double.valueOf(inputUnitPr.getText().toString());
+                }
+
 
                 if(option1Pr.equals("Atmosphere") && option2Pr.equals("Bar")){
                     calPr = inputPr*1.01325;

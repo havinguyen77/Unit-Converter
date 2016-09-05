@@ -1,5 +1,7 @@
 package com.havi.explo.unitconverter;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -80,8 +82,26 @@ public class WeightActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String option1wt = (String) spinnerFirstWt.getSelectedItem();
                 String option2wt = (String) spinnerSecondWt.getSelectedItem();
-                double inputwt = Double.valueOf(inputUnitWt.getText().toString());
+                double inputwt = 0.0;
                 double calwt;
+                if(inputUnitWt.getText().toString().equals("")){
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(WeightActivity.this);
+                    builder1.setTitle("Missing Input");
+                    builder1.setMessage("Please input a value");
+                    builder1.setCancelable(false);
+
+                    builder1.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+                }else{
+                    inputwt = Double.valueOf(inputUnitWt.getText().toString());
+                }
+
 
                 //Ounce Conversion
                 if(option1wt.equals("Ounce") && option2wt.equals("Pound")){

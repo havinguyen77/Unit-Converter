@@ -1,6 +1,8 @@
 package com.havi.explo.unitconverter;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -84,8 +86,26 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String option1 = (String) spinnerFirst.getSelectedItem();
                 String option2 = (String) spinnerSecond.getSelectedItem();
-                double input = Double.valueOf(inputUnit.getText().toString());
+                double input = 0.0;
                 double cal;
+                if(inputUnit.getText().toString().equals("")){
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
+                    builder1.setTitle("Missing Input");
+                    builder1.setMessage("Please input a value");
+                    builder1.setCancelable(false);
+
+                    builder1.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+                }else{
+                    input = Double.valueOf(inputUnit.getText().toString());
+                }
+
 
 
                 if(option1.equals("Inch") && option2.equals("Centimeter")){

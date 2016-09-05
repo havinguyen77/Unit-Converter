@@ -1,5 +1,7 @@
 package com.havi.explo.unitconverter;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -79,8 +81,26 @@ public class VolumeActivity extends AppCompatActivity {
 
                 String option1Vl = (String) spinnerFirstVl.getSelectedItem();
                 String option2Vl = (String) spinnerSecondVl.getSelectedItem();
-                double inputVl = Double.valueOf(inputUnitVl.getText().toString());
+                double inputVl = 0.0;
                 double calVl;
+                if(inputUnitVl.getText().toString().equals("")){
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(VolumeActivity.this);
+                    builder1.setTitle("Missing Input");
+                    builder1.setMessage("Please input a value");
+                    builder1.setCancelable(false);
+
+                    builder1.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+                }else{
+                    inputVl = Double.valueOf(inputUnitVl.getText().toString());
+                }
+
 
 
                 if(option1Vl.equals("US Teaspoon") && option2Vl.equals("US Tablespoon")){
