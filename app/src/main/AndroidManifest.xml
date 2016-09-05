@@ -10,7 +10,7 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstPageActivity">
+        <activity android:name=".DataActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +33,7 @@
             android:name=".TempActivity"
             android:parentActivityName=".FirstPageActivity" />
         <activity
-            android:name=".DataActivity"
+            android:name=".FirstPageActivity"
             android:parentActivityName=".FirstPageActivity" />
         <activity android:name=".FrequencyActivity"
             android:parentActivityName=".FirstPageActivity"/>
