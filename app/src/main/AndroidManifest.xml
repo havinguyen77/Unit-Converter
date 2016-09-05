@@ -10,37 +10,55 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DataActivity">
+
+        <activity
+            android:name=".FirstPageActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".DataActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".FirstPageActivity">
+        </activity>
+
         <activity
             android:name=".AreaActivity"
-            android:parentActivityName=".FirstPageActivity" />
+            android:parentActivityName=".FirstPageActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".VolumeActivity"
-            android:parentActivityName=".FirstPageActivity" />
+            android:parentActivityName=".FirstPageActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
-            android:parentActivityName=".FirstPageActivity" />
+            android:parentActivityName=".FirstPageActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".WeightActivity"
-            android:parentActivityName=".FirstPageActivity" />
+            android:parentActivityName=".FirstPageActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".TempActivity"
-            android:parentActivityName=".FirstPageActivity" />
-        <activity
-            android:name=".FirstPageActivity"
-            android:parentActivityName=".FirstPageActivity" />
+            android:parentActivityName=".FirstPageActivity"
+            android:screenOrientation="portrait"/>
+
+
         <activity android:name=".FrequencyActivity"
-            android:parentActivityName=".FirstPageActivity"/>
+            android:parentActivityName=".FirstPageActivity"
+            android:screenOrientation="portrait"/>
+
         <activity android:name=".PressureActivity"
-            android:parentActivityName=".FirstPageActivity"/>
+            android:parentActivityName=".FirstPageActivity"
+            android:screenOrientation="portrait"/>
+
         <activity android:name=".EnergyActivity"
-            android:parentActivityName=".FirstPageActivity" ></activity>
+            android:parentActivityName=".FirstPageActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

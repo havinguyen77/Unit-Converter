@@ -35,7 +35,7 @@ public class PressureActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pressure);
 
-        MobileAds.initialize(getApplicationContext(),"ca-app-pub-9818921099106202~4696649575");
+        MobileAds.initialize(getApplicationContext(),"ca-app-pub-9818921099106202/9008451171");
 
 
         mAdView = (AdView) findViewById(R.id.adView);
