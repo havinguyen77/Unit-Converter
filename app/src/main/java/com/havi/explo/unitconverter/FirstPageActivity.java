@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 
@@ -33,6 +34,9 @@ public class FirstPageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_firstpage);
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+        MobileAds.initialize(getApplicationContext(),"ca-app-pub-9818921099106202~4696649575");
+
 
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
