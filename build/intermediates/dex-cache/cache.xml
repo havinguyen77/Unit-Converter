@@ -1,2 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-basement-9.2.1_3a11415bfac1d4ba22e101e0889378a2a1b8ca64.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/internal_impl-24.1.1_eef6f2f960c566516c0505e118ae724305d7cc41.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-tasks-9.2.1_3fa2c476006bd578c9adca8d7c6f46907ff860d4.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="5337354083e89ed67151859ab0b6b80935c60eaf">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.firebase-firebase-analytics-impl-9.2.1_6265ed69b949988bbad854ac398d342b4c803a83.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-24.1.1_1647fba078f8cea92191d6bfe1d82f0d08cabb6d.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-ads-9.2.1_65fd178ab238d198112dc22ab89b3589d7500282.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="6a0f2d219f82db499ac03d5a985c4eb3e83fc422">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.firebase-firebase-analytics-9.2.1_6ba198e241c7df97c95037629139bae277c5545a.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="d41b5d21cc9dd7d210f0ae82ac509ba7f091d611">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.firebase-firebase-iid-9.2.1_8ff101917d0215662b3c70c03a7093016b2a91b7.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-24.1.1_bdd59ee40dad6617a95e46821d2f9987b2eb730d.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-24.1.1_2f2a249ce083d8aa0113dca8b2bbf5b56277d0ea.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/support-annotations-24.1.1_019dd6da88496d7091d04d80e226d9cf6bae9746.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-base-9.2.1_1aa1a0431220b8b3513f6334a8ea9e112bf618b6.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-clearcut-9.2.1_6552ad3a37c0cc656cb4458c7ad5b07fabc9acc5.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="3627eacd7f7cafb5e8ae683992e7b2f9b7dcab1a">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.firebase-firebase-common-9.2.1_84c2cc97ecdc308ac4378b0f648280e4d292a5c2.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-24.1.1_c2b6c8fb93b5d8c6ea210d5e44073c08a3555a96.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-gass-9.2.1_360ca5975e938d7289049d336e8d6d5e07c57e2e.jar" />
+    </item>
+    <item
+        jar="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="/Users/HaviNguyen/Desktop/Unit-Converter/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-ads-lite-9.2.1_a617cbb25246a8f75dc90ea7d0fbdb2664f3f361.jar" />
+    </item>
+
+</items>

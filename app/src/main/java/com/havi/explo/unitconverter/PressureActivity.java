@@ -123,7 +123,7 @@ public class PressureActivity extends AppCompatActivity {
                 }
                 if(option1Pr.equals("Atmosphere") && option2Pr.equals("Kilo Pascal")){
                     calPr = inputPr*101.325;
-                    double cal = Math.round(calPr*100000.0)/100000.0;
+                    double cal = Math.round(calPr*1000.0)/1000.0;
                     answerPr.setText("" + cal +" kPa");
                 }
                 if(option1Pr.equals("Atmosphere") && option2Pr.equals("Pound/Sq Inch")){

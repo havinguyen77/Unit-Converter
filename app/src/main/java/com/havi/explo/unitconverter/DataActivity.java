@@ -114,7 +114,7 @@ public class DataActivity extends AppCompatActivity {
                 }
                 if(option1Dt.equals("Bit") && option2Dt.equals("Kilobyte")){
                     calDt = inputDt*.0001220703125;
-                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    double cal = Math.round(calDt*1000000.0)/1000000.0;
                     answerDt.setText("" + cal + " Kb");
                 }
                 if(option1Dt.equals("Bit") && option2Dt.equals("Megabyte")){
@@ -140,17 +140,17 @@ public class DataActivity extends AppCompatActivity {
                 }
                 if(option1Dt.equals("Byte") && option2Dt.equals("Kilobyte")){
                     calDt = inputDt*.000976562;
-                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    double cal = Math.round(calDt*1000000.0)/1000000.0;
                     answerDt.setText("" + cal + " Kb");
                 }
                 if(option1Dt.equals("Byte") && option2Dt.equals("Megabyte")){
                     calDt = inputDt*9.5367431e-7;
-                    double cal = Math.round(calDt*1000000000000.0)/1000000000000.0;
+                    double cal = Math.round(calDt*1000000000.0)/1000000000.0;
                     answerDt.setText("" + cal + " Mb");
                 }
                 if(option1Dt.equals("Byte") && option2Dt.equals("Gigabyte")){
                     calDt = inputDt*9.3132257e-10;
-                    double cal = Math.round(calDt*1000000000000000.0)/1000000000000000.0;
+                    double cal = Math.round(calDt*1000000000000.0)/1000000000000.0;
                     answerDt.setText("" + cal + " Gb");
                 }
                 if(option1Dt.equals("Byte") && option2Dt.equals("Terabyte")){
@@ -170,7 +170,7 @@ public class DataActivity extends AppCompatActivity {
                 }
                 if(option1Dt.equals("Kilobyte") && option2Dt.equals("Megabyte")){
                     calDt = inputDt*.0009765625;
-                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    double cal = Math.round(calDt*1000000.0)/1000000.0;
                     answerDt.setText("" + cal + " Mb");
                 }
                 if(option1Dt.equals("Kilobyte") && option2Dt.equals("Gigabyte")){
@@ -180,7 +180,7 @@ public class DataActivity extends AppCompatActivity {
                 }
                 if(option1Dt.equals("Kilobyte") && option2Dt.equals("Terabyte")){
                     calDt = inputDt*9.3132257e-10;
-                    double cal = Math.round(calDt*1000000000000000.0)/1000000000000000.0;
+                    double cal = Math.round(calDt*1000000000000.0)/1000000000000.0;
                     answerDt.setText("" + cal + " Tb");
                 }
 
@@ -199,12 +199,12 @@ public class DataActivity extends AppCompatActivity {
                 }
                 if(option1Dt.equals("Megabyte") && option2Dt.equals("Gigabyte")){
                     calDt = inputDt*.0009765625;
-                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    double cal = Math.round(calDt*1000000.0)/1000000.0;
                     answerDt.setText("" + cal + " Gb");
                 }
                 if(option1Dt.equals("Megabyte") && option2Dt.equals("Terabyte")){
                     calDt = inputDt*9.53674316e-7;
-                    double cal = Math.round(calDt*1000000000000.0)/1000000000000.0;
+                    double cal = Math.round(calDt*1000000000.0)/1000000000.0;
                     answerDt.setText("" + cal + " Tb");
                 }
 
@@ -227,7 +227,7 @@ public class DataActivity extends AppCompatActivity {
                 }
                 if(option1Dt.equals("Gigabyte") && option2Dt.equals("Terabyte")){
                     calDt = inputDt*.0009765625;
-                    double cal = Math.round(calDt*10000000.0)/10000000.0;
+                    double cal = Math.round(calDt*1000000.0)/1000000.0;
                     answerDt.setText("" + cal + " Tb");
                 }
 

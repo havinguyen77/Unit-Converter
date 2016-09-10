@@ -370,7 +370,7 @@ public class FrequencyActivity extends AppCompatActivity {
                 if (option1Fq.equals("Terahertz") && option2Fq.equals("Nanohertz")){
                     calFq = inputFq*Math.pow(1,21);
                     double cal = Math.round(calFq*1000.0)/1000.0;
-                    answerFq.setText("" + cal+ " nHz");
+                    answerFq.setText("" + cal+ "E21 nHz");
                 }
                 if (option1Fq.equals("Terahertz") && option2Fq.equals("Microhertz")){
                     calFq = inputFq*1000000000e9;

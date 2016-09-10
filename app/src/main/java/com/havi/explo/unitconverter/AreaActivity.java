@@ -136,7 +136,7 @@ public class AreaActivity extends AppCompatActivity {
                 }
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Square Meter")){
                     calAr = inputAr*.00064516;
-                    double cal = Math.round(calAr*10000000.0)/10000000.0;
+                    double cal = Math.round(calAr*1000000.0)/1000000.0;
                     answerAr.setText("" +cal + " sq m");
                 }
                 if(option1Ar.equals("Square Inch") && option2Ar.equals("Square Kilometer")){

@@ -111,12 +111,12 @@ public class EnergyActivity extends AppCompatActivity {
 
                 if (option1Eg.equals("Joules") && option2Eg.equals("British Thermal Unit")){
                     calEg = inputEg* 9.479e-4;
-                    double cal = Math.round(calEg*1000000000.0)/1000000000.0;
+                    double cal = Math.round(calEg*1000000.0)/1000000.0;
                     answerEg.setText("" + cal + " btu");
                 }
                 if (option1Eg.equals("Joules") && option2Eg.equals("Quad")){
                     calEg = inputEg* 9.479e-19;
-                    double cal = Math.round(calEg*1000000000000000000000000.0)/1000000000000000000000000.0;
+                    double cal = Math.round(calEg*1000000000000000000000.0)/1000000000000000000000.0;
                     answerEg.setText("" + cal + " quad");
                 }
                 if (option1Eg.equals("Joules") && option2Eg.equals("Kilocalorie")){
@@ -131,7 +131,7 @@ public class EnergyActivity extends AppCompatActivity {
                 }
                 if (option1Eg.equals("Joules") && option2Eg.equals("Barrel of Oil Equivalent")){
                     calEg = inputEg* 1.634e-10;
-                    double cal = Math.round(calEg*1000000000000000.0)/1000000000000000.0;
+                    double cal = Math.round(calEg*1000000000000.0)/1000000000000.0;
                     answerEg.setText("" + cal + " boe");
                 }
                 if (option1Eg.equals("Joules") && option2Eg.equals("Megatonne of Oil Equivalent")){
@@ -141,7 +141,7 @@ public class EnergyActivity extends AppCompatActivity {
                 }
                 if (option1Eg.equals("Joules") && option2Eg.equals("Kilowatt-Hour")){
                     calEg = inputEg* 2.78e-7;
-                    double cal = Math.round(calEg*100000000000.0)/100000000000.0;
+                    double cal = Math.round(calEg*1000000000.0)/1000000000.0;
                     answerEg.setText("" + cal + " kWh");
                 }
                 if (option1Eg.equals("Joules") && option2Eg.equals("Terawatt-Year")){
@@ -158,12 +158,12 @@ public class EnergyActivity extends AppCompatActivity {
                 }
                 if (option1Eg.equals("British Thermal Unit") && option2Eg.equals("Quad")){
                     calEg = inputEg* 1e-15;
-                    double cal = Math.round(calEg*1000000000000000000000.0)/1000000000000000000000.0;
+                    double cal = Math.round(calEg*1000000000000000000.0)/1000000000000000000.0;
                     answerEg.setText("" + cal + " quad");
                 }
                 if (option1Eg.equals("British Thermal Unit") && option2Eg.equals("Kilocalorie")){
                     calEg = inputEg* .2522;
-                    double cal = Math.round(calEg*1000000.0)/1000000.0;
+                    double cal = Math.round(calEg*100000.0)/100000.0;
                     answerEg.setText("" + cal + " kcal");
                 }
                 if (option1Eg.equals("British Thermal Unit") && option2Eg.equals("Megatonne of Coal Equivalent")){
